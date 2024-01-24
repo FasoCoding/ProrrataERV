@@ -1,0 +1,1366 @@
+child_name,Tecnología,Node
+TRAPEN,Thermal Gen S. Zone,Molinos110
+YUNGAY_U3_DIE,Thermal Gen S. Zone,Charrua154
+MAITENLAHUE_FV,Solar Farms,Rapel220
+NALCAS,Hydro Gen Group C,Rahue220
+SAN_ISIDRO-FA_GN_A,Thermal Gen S. Zone,SanLuis220
+LLANOS_DEL_VIENTO_EO,Wind Farms,Ohiggins220_BP1
+MALLECO_SUR_EO,Wind Farms,Mulchen220
+TOTORAL_EO,Wind Farms,LPalmas220
+PLAYERON_FV,Solar Farms,Parral154
+LAUTARO_2_BL1,Thermal Gen S. Zone,Lautaro066
+NEHUENCO_1-TG_GNL_C,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG+TV_GNL_INF,Thermal Gen S. Zone,SanLuis220
+TALTAL_2_GN_A,Thermal Gen N. Zone,Paposo220
+LAS_BANDURRIAS_FV,Solar Farms,Teno154
+LAS_CABRAS_FV,Solar Farms,Rancagua154
+LAS_ROJAS_FV,Solar Farms,PAzucar110
+PANGUE_U1,Hydro Gen Group A,Pangue220
+RUCUE,Hydro Gen Group A,Rucue220
+ALFALFAL_2,Hydro Gen Group B,Almendros220
+CARILAFQUEN,Hydro Gen Group B,RioTolten220
+NUEVA_RENCA-TG+TV_GNL_INF,Thermal Gen S. Zone,Renca110
+QUINTERO_1B_GNL_F,Thermal Gen S. Zone,Quintero220
+NEHUENCO_9B_CA_GNL,Termicas Ficticias,SanLuis220
+BAT_SALVADOR_FV,Hydro Ficticias,DAlmagro110
+SAUCEANDES,Hydro Gen Group C,Polpaico220
+ANDES_U1_DIE,Thermal Gen N. Zone,DAlmagro110
+ATA-TG1B_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+VALDIVIA_BL1_PINO,Thermal Gen S. Zone,Ciruelos220
+CABO_LEONES_2_EO,Wind Farms,Maitencillo220
+CALAMA_EO,Wind Farms,Salar220
+DONGO,Hydro Gen Group C,Chonchi110
+EL_BRINCO,Hydro Gen Group C,Mulchen220
+ALMEYDA_FV,Solar Farms,Cumbres500
+BERRUECO_FV,Solar Farms,Chillan154
+CABILDO_FV,Solar Farms,LVilos220
+SANTA_CAROLINA_FV,Solar Farms,Tinguiririca154
+EL_RESPLANDOR_FV,Solar Farms,Charrua220
+HUAPE_FV,Solar Farms,Chillan154
+MEJILLONES_3-TG_GNL_E,Thermal Gen N. Zone,LosChangos220
+CANTILLANA_FV,Solar Farms,Paine154
+EL_CERNICALO_2_FV,Solar Farms,Parral154
+SANISIDRO_2_CC_GNL,Termicas Ficticias,SanLuis220
+RENAICO,Hydro Gen Group C,Charrua154
+ANGAMOS_2,Thermal Gen N. Zone,Angamos220
+VINALES_BL1,Thermal Gen S. Zone,Constitucion066
+MECO_CHILLAN_FV,Solar Farms,Chillan154
+SAN_MATIAS_EO,Wind Farms,Charrua154
+ANDES_FV,Solar Farms,Andes220
+NEHUENCO_2-TG_GN_A,Thermal Gen S. Zone,SanLuis220
+KELAR-TG2+0.5TV_GN_A,Thermal Gen N. Zone,Kapatur220_BP1
+KELAR-TG2+0.5TV_GNL_E,Thermal Gen N. Zone,Kapatur220_BP1
+CHAMPA_FV,Solar Farms,Paine154
+DOMEYKO_FV,Solar Farms,Ohiggins220_BP1
+URIBE_SOLAR_FV,Solar Farms,Esmeralda110
+MAITENES,Hydro Gen Group B,Florida110
+NUEVA_ALDEA_BL3,Thermal Gen S. Zone,SantaElvira066
+ATA-TG1A+TG1B+TV1C_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+EL_LLANO,Hydro Gen Group C,Florida110
+ALICAHUE_FV,Solar Farms,LVilos220
+PITOTOY_FV,Solar Farms,Malloa154
+DEGAN_NAVE5,Thermal Gen S. Zone,Degan110
+ESPERANZA_TG1,Thermal Gen S. Zone,Sauzal154
+NEHUENCO_1-TG_GN_A,Thermal Gen S. Zone,SanLuis220
+CMPC_LAJA_BL1,Thermal Gen S. Zone,Charrua220
+EL_ROBLE_FV,Solar Farms,Rapel220
+KELAR-TG2_GNL_A,Thermal Gen N. Zone,Kapatur220_BP1
+KELAR-TG2_GNL_C,Thermal Gen N. Zone,Kapatur220_BP1
+MEJILLONES_3-TG_GNL_A,Thermal Gen N. Zone,LosChangos220
+LAS_MOLLACAS_FV,Solar Farms,ElPenon110
+CANUTILLAR_U2,Hydro Gen Group A,Canutillar220
+SAN_IGNACIO,Hydro Gen Group A,Itahue154
+CHACAYES,Hydro Gen Group B,Sauzal110_BP1
+CIPRESILLOS,Hydro Gen Group B,Sauzal110_BP2
+FLORIDA_3,Hydro Gen Group B,Florida110
+PICURIO_FV,Solar Farms,Tinguiririca154
+SAN_ISIDRO-TG+TV_GNL_INF,Thermal Gen S. Zone,SanLuis220
+TRINCAO,Thermal Gen S. Zone,Chonchi110
+MARCHIGUE_7_FV,Solar Farms,Rapel220
+MEMBRILLO_FV,Solar Farms,Teno154
+TCHAMMA_EO,Wind Farms,Crucero220
+SANTA_ELIZABETH_FV,Solar Farms,SFcoMost066
+LICANTEN_BL1,Thermal Gen S. Zone,Itahue154
+NEHUENCO_1-TG+TV_GNL_B,Thermal Gen S. Zone,SanLuis220
+MEJILLONES_3-TG_GNL_C,Thermal Gen N. Zone,LosChangos220
+PAJONALES,Thermal Gen N. Zone,DonHector220
+LA_CRUZ_SOLAR_FV,Solar Farms,Crucero220
+LALACKAMA_FV,Solar Farms,Francisco220
+LOCKMA_FV,Solar Farms,Esmeralda110
+COCHRANE_2,Thermal Gen N. Zone,Cochrane220
+KELAR-TG1+0.5TV_GNL_B,Thermal Gen N. Zone,Kapatur220_BP1
+CUZCUZ_FV,Solar Farms,ElPenon110
+SOY_SOLAR_FV,Solar Farms,PAzucar110
+NUEVA_RENCA-FA_GNL_P,Thermal Gen S. Zone,Renca110
+SANTA_ROSA,Hydro Gen Group C,Condores220
+ATA-TG1A_DIE,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1A+0.5TV1C_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1A+TG1B+TV1C_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV_GNL_A,Thermal Gen S. Zone,SanLuis220
+EL_ARREBOL_EO,Wind Farms,Horcones066
+MAIKONO_FV,Solar Farms,Miraflores110
+LA_ARENA,Hydro Gen Group C,PMontt220
+PALACIOS,Hydro Gen Group C,PNegro220
+LAS_VEGAS,Thermal Gen S. Zone,LVegas110
+NEHUENCO_1-TG_GNL_F,Thermal Gen S. Zone,SanLuis220
+COLIHUES_U2_HFO,Thermal Gen S. Zone,Sauzal154
+TOCOPILLA_U16-TG_GN_A,Thermal Gen N. Zone,Tocopilla220_BP1
+LA_HUELLA_FV,Solar Farms,DonHector220
+LOS_MOLINOS_FV,Solar Farms,AMelipilla220
+ATA-TG2B_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG2B_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG2B+0.5TV2C_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+IE_MEJILLONES,Thermal Gen N. Zone,LosChangos220
+CASTILLA_FV,Solar Farms,Cardones110
+CHERCAN_FV,Solar Farms,PAzucar110
+EL_AGUILA_FV,Solar Farms,Arica066
+VALLE_SOLAR_OESTE_FV,Solar Farms,Cardones110
+ATA_CC2_TV,Termicas Ficticias,Atacama220_BP1
+ANGOSTURA_U3,Hydro Gen Group A,LosNotros220
+CURILLINQUE,Hydro Gen Group A,Cipreses154
+SAN_ISIDRO_2-TG_DIE,Thermal Gen S. Zone,SanLuis220
+ANDES_U4_DIE,Thermal Gen N. Zone,DAlmagro110
+VALDIVIA_BL2_EUCA,Thermal Gen S. Zone,Ciruelos220
+LUNA_DEL_NORTE_FV,Solar Farms,PAzucar110
+HIDRO_BONITO_MC3,Hydro Gen Group C,Rahue220
+RAUQUEN_FV,Solar Farms,Teno154
+SAN_CARLOS_FV,Solar Farms,Parral154
+NEHUENCO_1-FA_GNL_A,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG_GNL_A,Thermal Gen S. Zone,SanLuis220
+TOCOPILLA_U16-TG+TV_GNL_A,Thermal Gen N. Zone,Tocopilla220_BP1
+EL_FLAMENCO_FV,Solar Farms,Itahue154
+LAS_TENCAS_FV,Solar Farms,Malloa154
+ATA-TG2B_DIE,Thermal Gen N. Zone,Atacama220_BP1
+KELAR-TG1+0.5TV_GNL_D,Thermal Gen N. Zone,Kapatur220_BP1
+CANDELARIA_1_CA_GNL,Termicas Ficticias,Candelaria220
+MACHICURA_U1,Hydro Gen Group A,Colbun220
+BLANCO,Hydro Gen Group B,Polpaico220
+NEWEN_GNL_A,Thermal Gen S. Zone,SVicente154
+QUINTERO_1A_GN_A,Thermal Gen S. Zone,Quintero220
+MEJILLONES_3_CC_GNL,Termicas Ficticias,LosChangos220
+SANISIDRO_2_CA_DIE,Termicas Ficticias,SanLuis220
+ARICA_M2,Thermal Gen N. Zone,DArica066
+MITCHI_FV,Solar Farms,Cardones110
+PEDREROS_FV,Solar Farms,Polpaico220
+DONGUIL,Hydro Gen Group C,Temuco066
+LAS_FLORES,Hydro Gen Group C,Rahue220
+MOLINERA_VILLARRICA,Hydro Gen Group C,Temuco066
+NEHUENCO_9B_GN_A,Thermal Gen S. Zone,SanLuis220
+SIERRA_GORDA_EO,Wind Farms,Crucero220
+ALTURAS_DE_OVALLE_FV,Solar Farms,ElPenon110
+ANTAY_FV,Solar Farms,Cardones220
+RECOLETA_FV,Solar Farms,ElPenon110
+NEHUENCO_1-FA_GN_A,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG+TV_GNL_A,Thermal Gen S. Zone,SanLuis220
+CELCO_BL2,Thermal Gen S. Zone,Constitucion066
+ATA-TG2A+0.5TV2C_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+TALTAL_1_GN_A,Thermal Gen N. Zone,Paposo220
+CAIMI_FV,Solar Farms,LVegas110
+CARA_DE_GALLO_FV,Solar Farms,Rancagua154
+CHINCOL_FV,Solar Farms,Parral154
+CONDOR_PELVIN_FV,Solar Farms,Chena110
+TRANQUE_DEL_SOL_FV,Solar Farms,LVegas110
+VENTURADA_FV,Solar Farms,Chillan154
+ATA-TG1A+0.5TV1C_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+CUEL_EO,Wind Farms,Charrua154
+ALTO_HOSPICIO,Hydro Gen Group C,Condores220
+LEBU_EO,Wind Farms,Horcones066
+MONTE_REDONDO_EO,Wind Farms,MRedondo220
+BELLAVISTA_FV,Solar Farms,ElPenon110
+SANTA_CLARA_FV,Solar Farms,ElPenon110
+TOCOPILLA-TG3_DIE,Thermal Gen N. Zone,Tocopilla220_BP1
+TOCOPILLA-TG3_GNL_B,Thermal Gen N. Zone,Tocopilla220_BP1
+UJINA_U4_DIE,Thermal Gen N. Zone,Collahuasi220
+EL_MONTE_FV,Solar Farms,AMelipilla220
+LOS_ANDES_FV,Solar Farms,Andes220
+LOS_LOROS_FV,Solar Farms,Cardones110
+KELAR-TG1+0.5TV_GN_A,Thermal Gen N. Zone,Kapatur220_BP1
+CORDILLERILLA_FV,Solar Farms,Rapel220
+DIEGO_DE_ALMAGRO_FV,Solar Farms,DAlmagro110
+DON_OSCAR_FV,Solar Farms,PAzucar110
+KELAR_CC_TG1_GNL,Termicas Ficticias,Kapatur220_BP1
+NUEVA_RENCA-TG+TV_GNL_B,Thermal Gen S. Zone,Renca110
+QUINTERO_1B_GNL_INF,Thermal Gen S. Zone,Quintero220
+KELAR_CC_TV,Termicas Ficticias,Kapatur220_BP1
+RECA,Hydro Gen Group C,Valdivia220
+AGUAS_BLANCAS,Thermal Gen N. Zone,Palestina220
+SAN_ISIDRO-TG+TV-FSTVD_GNL_D,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO-TG+TV-FSTVD_GNL_F,Thermal Gen S. Zone,SanLuis220
+SANTA_MARIA,Thermal Gen S. Zone,SantaMaria220
+MONTT_SOLAR_FV,Solar Farms,LVilos220
+VOLCAN,Hydro Gen Group B,Florida110
+QUEULE_FV,Solar Farms,Rancagua154
+RIO_PEUCO_FV,Solar Farms,SFcoMost066
+MAULE,Thermal Gen S. Zone,Constitucion066
+CANDELARIA_1_GNL_A,Thermal Gen S. Zone,Candelaria220
+CELCO_BL1,Thermal Gen S. Zone,Constitucion066
+TALTAL_2_GNL_B,Thermal Gen N. Zone,Paposo220
+LINGUE_FV,Solar Farms,ASanta220
+CASUTO_FV,Solar Farms,Polpaico220
+DIEGO_ALMAGRO_SUR_FV,Solar Farms,DAlmagro220
+DON_ANDRONICO_FV,Solar Farms,Buin110
+DUQUECO_FV,Solar Farms,Mulchen220
+TRAVESIA_FV,Solar Farms,Cardones220
+VILLA_ALEMANA_FV,Solar Farms,Quillota220
+ANGOSTURA_U1,Hydro Gen Group A,LosNotros220
+CANUTILLAR_U1,Hydro Gen Group A,Canutillar220
+NUEVA_VENTANAS,Thermal Gen S. Zone,Ventanas220
+KELAR_CC_TG2_GNL,Termicas Ficticias,Kapatur220_BP1
+QUINTERO_1B_CA_GNL,Termicas Ficticias,Quintero220
+QUELTEHUES,Hydro Gen Group B,Florida110
+ATA-TG1B+0.5TV1C_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+MARIN_FV,Solar Farms,Polpaico220
+SAN_ISIDRO-FA_GNL_C,Thermal Gen S. Zone,SanLuis220
+ALTOS_DEL_PAICO_FV,Solar Farms,AMelipilla220
+QUELTEHUE_FV,Solar Farms,Malloa154
+NEHUENCO_2-TG+TV_GNL_C,Thermal Gen S. Zone,SanLuis220
+TOCOPILLA-TG1,Thermal Gen N. Zone,Tocopilla110
+TOCOPILLA-TG3_GNL_INF,Thermal Gen N. Zone,Tocopilla220_BP1
+UJINA_U1_HFO,Thermal Gen N. Zone,Collahuasi220
+CANDELARIA_1_GNL_E,Thermal Gen S. Zone,Candelaria220
+COLIHUES_U1_DIE,Thermal Gen S. Zone,Sauzal154
+COLMITO_GNL_A,Thermal Gen S. Zone,Torquemada110
+EL_ROMERO_FV,Solar Farms,DonHector220
+JAVIERA_CARRERA_FV,Solar Farms,Buin110
+ATA-TG2B+0.5TV2C_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+SDGx01_FV,Solar Farms,PAzucar110
+LOS_HIERROS_2,Hydro Gen Group B,Pehuenche220
+ATA-TG2A_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+VALDIVIA_BL1_EUCA,Thermal Gen S. Zone,Ciruelos220
+VALDIVIA_BL3_PINO,Thermal Gen S. Zone,Ciruelos220
+CAMPO_LINDO_EO,Wind Farms,Mulchen220
+SAN_CLEMENTE,Hydro Gen Group B,Colbun220
+PUNTA_SIERRA_EO,Wind Farms,PuntaSierra220
+TALTAL_EO,Wind Farms,Cachiyuyal220
+ABASTIBLE_CONCON_FV,Solar Farms,Torquemada110
+ARMAZONES_FV,Solar Farms,Francisco220
+PULLALLI_FV,Solar Farms,LVilos220
+CANDELARIA_1_GNL_INF,Thermal Gen S. Zone,Candelaria220
+CMPC_CORDILLERA_GN_A,Thermal Gen S. Zone,PAltoCmpc110
+EL_SHARON_FV,Solar Farms,Rapel220
+FRANCISCO_FV,Solar Farms,Rancagua154
+GAVIOTIN_FV,Solar Farms,PAzucar110
+NUEVA_TOCOPILLA_1,Thermal Gen N. Zone,Norgener220
+TOCOPILLA_U16-TG+TV_GN_A,Thermal Gen N. Zone,Tocopilla220_BP1
+LAS_PALMAS_DEL_VERANO_FV,Solar Farms,AMelipilla220
+LAS_TORTOLAS_DEL_VERANO_FV,Solar Farms,Polpaico220
+ATA-TG2B+0.5TV2C_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+DAS_FV,Solar Farms,DAlmagro110
+TORINO_FV,Solar Farms,Teno154
+TRINIDAD_FV,Solar Farms,Rapel220
+ATA_CC2_TGB_DIE,Termicas Ficticias,Atacama220_BP1
+PROVIDENCIA,Hydro Gen Group B,Maule154
+SAN_ISIDRO_2-TG_GN_A,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO_2-TG+TV-FSTVU_GNL_A,Thermal Gen S. Zone,SanLuis220
+SAUZAL,Hydro Gen Group C,Sauzal110_BP2
+CABO_LEONES_1_EO,Wind Farms,Maitencillo220
+MALAQUITA_SOLAR_FV,Solar Farms,Cardones110
+TALINAY_ORIENTE_EO,Wind Farms,Talinay220
+ARIZTIA_FV,Solar Farms,LVilos220
+PUEBLO_SECO_FV,Solar Farms,Chillan154
+RATULEMUS_FV,Solar Farms,Parral154
+RLA_FV,Solar Farms,AMelipilla220
+SAMO_BAJO_FV,Solar Farms,ElPenon110
+ERSA_BIOBIO,Thermal Gen S. Zone,Hualpen154
+LAUTARO_1_BL2,Thermal Gen S. Zone,Lautaro066
+LOS_VIENTOS-CNAVIA_GNL_A,Thermal Gen S. Zone,LVegas110_exp
+DEGAN_2,Thermal Gen S. Zone,Degan110
+GUARANA_FV,Solar Farms,Rapel220
+TOCOPILLA_U16-TG_GNL_A,Thermal Gen N. Zone,Tocopilla220_BP1
+CACHANAS_FV,Solar Farms,Tinguiririca154
+CHIMBARONGO_NIEBLA_FV,Solar Farms,Tinguiririca154
+CONEJO_FV,Solar Farms,Francisco220
+DON_MATIAS_FV,Solar Farms,Tinguiririca154
+TARANTO_FV,Solar Farms,ASanta220
+VILLA_ALEGRE_FV,Solar Farms,SJavier066
+KELAR_CC_TG1_DIE,Termicas Ficticias,Kapatur220_BP1
+NUEVA_ALDEA_BL2,Thermal Gen S. Zone,SantaElvira066
+QUINTERO_1B_GNL_E,Thermal Gen S. Zone,Quintero220
+LUCAS_FV,Solar Farms,PAzucar110
+QUINTERO_1A_CA_GNL,Termicas Ficticias,Quintero220
+ATA-TG2A_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV_GNL_F,Thermal Gen S. Zone,SanLuis220
+PEQUEN_FV,Solar Farms,Teno154
+MUNILQUE_2,Hydro Gen Group C,Charrua154
+NEHUENCO_9B_GNL_D,Thermal Gen S. Zone,SanLuis220
+VALLE_DE_LOS_VIENTOS_EO,Wind Farms,Salar220
+PRETTY_FIELD_FV,Solar Farms,ElPenon110
+RANGUIL_FV,Solar Farms,Itahue154
+CANDELARIA_1_GNL_B,Thermal Gen S. Zone,Candelaria220
+ICB_FV,Solar Farms,ElSalto110
+KELAR-TG2+0.5TV_GNL_D,Thermal Gen N. Zone,Kapatur220_BP1
+LA_CHAPEANA_FV,Solar Farms,ElPenon110
+HUASCO-TG_U2_DIE,Thermal Gen N. Zone,Huasco110
+KELAR-TG1+0.5TV_GNL_E,Thermal Gen N. Zone,Kapatur220_BP1
+CHALINGA_FV,Solar Farms,LPalmas220
+SANTIAGO_SOLAR_FV,Solar Farms,Polpaico220
+VILLA_SECA_FV,Solar Farms,Linares154
+ATA-TG1B+0.5TV1C_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV-FSTVD_GNL_A,Thermal Gen S. Zone,SanLuis220
+SAN_JAVIER_1,Thermal Gen S. Zone,Constitucion066
+TENO,Thermal Gen S. Zone,Teno154
+OLIVILLO_FV,Solar Farms,ASanta220
+PANQUEHUE_2_FV,Solar Farms,LVegas110
+BUREO,Hydro Gen Group C,Mulchen220
+CALIBORO,Hydro Gen Group C,Charrua154
+COLLIL,Hydro Gen Group C,Chonchi110
+ENSENADA,Hydro Gen Group C,PMontt220
+LOS_PADRES,Hydro Gen Group C,Rucue220
+OJOS_DE_AGUA,Hydro Gen Group C,Cipreses154
+SAN_ANDRES_FV,Solar Farms,CPinto220
+SANTA_ISABEL_FV,Solar Farms,Lagunas220
+NEHUENCO_1-TG_GNL_INF,Thermal Gen S. Zone,SanLuis220
+CANDELARIA_1_DIE,Thermal Gen S. Zone,Candelaria220
+CORONEL_DIE,Thermal Gen S. Zone,Coronel066
+TALTAL_2_GNL_A,Thermal Gen N. Zone,Paposo220
+CERRO_PABELLON_U1,Thermal Gen N. Zone,Conchi220
+COLCHAGUA_FV,Solar Farms,Rapel220
+DON_RODRIGO_FV,Solar Farms,Talca066
+EL_BOCO_FV,Solar Farms,LVegas110
+TALLADO_FV,Solar Farms,Angamos220
+RALCO_U2,Hydro Gen Group A,Ralco220
+QUINTAY,Thermal Gen S. Zone,ASanta110
+ATA-TG1B+0.5TV1C_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-FA_GNL_F,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO-TG_GNL_C,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO-TG+TV-FSTVD_GNL_C,Thermal Gen S. Zone,SanLuis220
+MARCHIGUE_2_FV,Solar Farms,Rapel220
+ALTO_RENAICO,Hydro Gen Group C,Charrua154
+AZABACHE_FV,Solar Farms,Salar220
+POZO_ALMONTE_1_FV,Solar Farms,PAlmonte110
+NEHUENCO_1-FA_GNL_C,Thermal Gen S. Zone,SanLuis220
+TOCOPILLA-TG3_GNL_D,Thermal Gen N. Zone,Tocopilla220_BP1
+UJINA_U3_HFO,Thermal Gen N. Zone,Collahuasi220
+CANDELARIA_2_GNL_G,Thermal Gen S. Zone,Candelaria220
+CHOLGUAN_BL2,Thermal Gen S. Zone,Cholguan066
+EL_TIUQUE_FV,Solar Farms,Maule154
+KELAR-TG2_GNL_INF,Thermal Gen N. Zone,Kapatur220_BP1
+MEJILLONES_3-TG_GN_A,Thermal Gen N. Zone,LosChangos220
+LIRIOS_FV,Solar Farms,Florida110
+COMBARBALA,Thermal Gen N. Zone,ElPenon110
+KELAR-TG1+0.5TV_GNL_INF,Thermal Gen N. Zone,Kapatur220_BP1
+KELAR-TG1+TG2+TV_GNL_B,Thermal Gen N. Zone,Kapatur220_BP1
+CANDELARIA_2_CA_GNL,Termicas Ficticias,Candelaria220
+PILMAIQUEN,Hydro Gen Group B,Rahue220
+SAN_ISIDRO_2-TG+TV_GN_A,Thermal Gen S. Zone,SanLuis220
+RIO_HUASCO,Hydro Gen Group C,Maitencillo110
+SAN_ISIDRO-FA_GNL_E,Thermal Gen S. Zone,SanLuis220
+NANCAGUA_FV,Solar Farms,Tinguiririca154
+CUMPEO,Hydro Gen Group C,Itahue154
+EL_COLORADO,Hydro Gen Group C,PMontt220
+BLU_FV,Solar Farms,Chillan154
+POZO_ALMONTE_3_FV,Solar Farms,PAlmonte110
+KELAR-TG2_DIE,Thermal Gen N. Zone,Kapatur220_BP1
+COLIHUES_U2_DIE,Thermal Gen S. Zone,Sauzal154
+SAN_LORENZO_U1,Thermal Gen N. Zone,DAlmagro220
+LOICA_FV,Solar Farms,Teno154
+TAMAYA_FV,Solar Farms,Tamaya110
+VILLA_FV,Solar Farms,Itahue154
+NEWEN_PRO,Thermal Gen S. Zone,SVicente154
+SAN_ISIDRO_2-TG+TV_GNL_D,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO_2-TG+TV_GNL_E,Thermal Gen S. Zone,SanLuis220
+PILAR_LOS_AMARILLOS_FV,Solar Farms,DAlmagro110
+TRAILELFU,Hydro Gen Group C,Temuco066
+ANDES_U2_FO6,Thermal Gen N. Zone,DAlmagro110
+ATA-TG2A_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+EL_MAITEN_EO,Wind Farms,Charrua220
+LUDERS_FV,Solar Farms,Rancagua154
+CAVANCHA,Hydro Gen Group C,Condores220
+HIDROMOCHO,Hydro Gen Group C,Rahue220
+LOS_BAJOS,Hydro Gen Group C,Buin110
+NEHUENCO_9B_GNL_A,Thermal Gen S. Zone,SanLuis220
+PSF_HORIZONTE_FV,Solar Farms,Paine154
+PSF_LO_SIERRA_FV,Solar Farms,AMelipilla220
+SANTA_AMELIA_FV,Solar Farms,Malloa154
+NEHUENCO_1-TG+TV_GNL_F,Thermal Gen S. Zone,SanLuis220
+KELAR-TG1+TG2+TV_GNL_D,Thermal Gen N. Zone,Kapatur220_BP1
+CAMPICHE,Thermal Gen S. Zone,Ventanas220
+CANDELARIA_2_GNL_C,Thermal Gen S. Zone,Candelaria220
+CHILOE,Thermal Gen S. Zone,Chonchi110
+OLIVOS_BL2,Thermal Gen N. Zone,LVilos220
+SIETE_COLORES_FV,Solar Farms,ElPenon110
+VITUCO_2B_FV,Solar Farms,Rapel220
+CONVENTO_VIEJO,Hydro Gen Group B,Itahue154
+SANTA_RITA_FV,Solar Farms,Chillan154
+SAUZALITO,Hydro Gen Group C,Sauzal110_BP2
+SANTA_FE_BL1,Thermal Gen S. Zone,Charrua220
+SANTA_FE_BL2,Thermal Gen S. Zone,Charrua220
+OVALLE_NORTE_FV,Solar Farms,Quillota110
+PENCAHUE_ESTE_FV,Solar Farms,Itahue154
+AILLIN,Hydro Gen Group C,Rucue220
+EL_GALPON,Hydro Gen Group C,Itahue154
+EL_PINAR,Hydro Gen Group C,Cholguan220
+AMPARO_DEL_SOL_FV,Solar Farms,ElPenon110
+RINCONADA_ALCONES_FV,Solar Farms,Rapel220
+RIO_ESCONDIDO_FV,Solar Farms,Cardones220
+SAN_PEDRO_FV,Solar Farms,AMelipilla220
+NEHUENCO_1-FA_GNL_E,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG_GNL_D,Thermal Gen S. Zone,SanLuis220
+UJINA_U3_DIE,Thermal Gen N. Zone,Collahuasi220
+CANDELARIA_1_GNL_G,Thermal Gen S. Zone,Candelaria220
+EL_ZORZAL_FV,Solar Farms,Itahue154
+KELAR-TG2_GN_A,Thermal Gen N. Zone,Kapatur220_BP1
+MEJILLONES_3-TG+TV_GN_A,Thermal Gen N. Zone,LosChangos220
+LOMA_LOS_COLORADOS_FV,Solar Farms,PPeuco110
+LA_ESPERANZA_EO,Wind Farms,Charrua154
+VALLE_DE_LA_LUNA_2_FV,Solar Farms,Batuco110
+NUEVA_RENCA-TG+TV_GNL_A,Thermal Gen S. Zone,Renca110
+KELAR_CC_TG2_DIE,Termicas Ficticias,Kapatur220_BP1
+PAMPA_CAMARONES_FV,Solar Farms,Arica066
+PUCLARO,Hydro Gen Group C,PAzucar110
+EL_TOTORAL,Thermal Gen S. Zone,ASanta110
+NEHUENCO_2-TG+TV_DIE,Thermal Gen S. Zone,SanLuis220
+KELAR-TG1+TG2+TV_GNL_C,Thermal Gen N. Zone,Kapatur220_BP1
+CANDELARIA_2_GNL_E,Thermal Gen S. Zone,Candelaria220
+CHOLGUAN_BL1,Thermal Gen S. Zone,Cholguan066
+INGENIO_FV,Solar Farms,LVilos220
+KONDA_FV,Solar Farms,Polpaico220
+ATA-TG2A+0.5TV2C_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+GUACOLDA_1,Thermal Gen N. Zone,Guacolda220
+HUASCO-TG_U1_IFO,Thermal Gen N. Zone,Huasco110
+QUINTERO_1A_GNL_D,Thermal Gen S. Zone,Quintero220
+ATA-TG2A_DIE,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV_GN_A,Thermal Gen S. Zone,SanLuis220
+MARIA_ELENA_FV,Solar Farms,MariaElena220
+RIO_PICOIQUEN,Hydro Gen Group B,Charrua154
+GUAYACAN,Hydro Gen Group C,Florida110
+ALCON_FV,Solar Farms,Rapel220
+INDEPENDENCIA_FV,Solar Farms,PPeuco110
+PUNTA_COLORADA_DIE,Thermal Gen N. Zone,PColorada220
+TALTAL_2_GNL_E,Thermal Gen N. Zone,Paposo220
+EL_CONDOR_FV,Solar Farms,Teno154
+CHANCON_FV,Solar Farms,Rancagua154
+DON_MARTIN_FV,Solar Farms,Mulchen220
+SLK_808_FV,Solar Farms,Polpaico220
+VALLE_ESCONDIDO_FV,Solar Farms,Cardones220
+ATA_CC2_TGA_GNL,Termicas Ficticias,Atacama220_BP1
+MALALCAHUELLO,Hydro Gen Group B,RioTolten220
+SAN_ISIDRO_2-TG+TV-FSTVU_GNL_F,Thermal Gen S. Zone,SanLuis220
+MARANON_FV,Solar Farms,Maitencillo110
+PARANAL_FV,Solar Farms,Francisco220
+NEHUENCO_1-TG+TV_GNL_D,Thermal Gen S. Zone,SanLuis220
+TOCOPILLA-TG3_GNL_E,Thermal Gen N. Zone,Tocopilla220_BP1
+CANDELARIA_1_GN_A,Thermal Gen S. Zone,Candelaria220
+GRANATE_FV,Solar Farms,ElPenon110
+MEJILLONES_3-TG_GNL_B,Thermal Gen N. Zone,LosChangos220
+TALTAL_1_GNL_D,Thermal Gen N. Zone,Paposo220
+LA_VICTORIA_FV,Solar Farms,Chillan154
+LOMAS_COLORADAS_FV,Solar Farms,ElPenon110
+LOS_PALTOS_FV,Solar Farms,LVilos220
+ATA-TG2A+TG2B+TV2C_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+HUAJACHE_EO,Wind Farms,Horcones066
+CATEMU_FV,Solar Farms,ASanta220
+CAUQUENES_FV,Solar Farms,Parral154
+VICTORIA_FV,Solar Farms,Salar220
+COLBUN_U1,Hydro Gen Group A,Colbun220
+ITATA,Hydro Gen Group B,Chillan154
+BAT_ARICA,Hydro Ficticias,Arica066
+TRUFUL-TRUFUL,Hydro Gen Group C,Temuco220
+ATA-TG1A+0.5TV1C_DIE,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1B+0.5TV1C_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+ANUNUCA_DEL_VERANO_FV,Solar Farms,Polpaico220
+PALMAR,Hydro Gen Group C,Rahue220
+HORCONES_DIE,Thermal Gen S. Zone,Horcones066
+LOS_VIENTOS-CNAVIA_GNL_C,Thermal Gen S. Zone,LVegas110_exp
+NEHUENCO_1-TG+TV_DIE,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_1-TG+TV_GNL_INF,Thermal Gen S. Zone,SanLuis220
+EL_LITRE_II_FV,Solar Farms,Florida110
+ELENA_FV,Solar Farms,Crucero220
+FARAMALLA_FV,Solar Farms,Rapel220
+MEJILLONES_3-TG+TV_GNL_D,Thermal Gen N. Zone,LosChangos220
+TOCOPILLA_U16-TG_GNL_E,Thermal Gen N. Zone,Tocopilla220_BP1
+LA_FRONTERA_FV,Solar Farms,Itahue154
+LA_PALMA_FV,Solar Farms,Chillan154
+LAJA_ANDINO_FV,Solar Farms,Charrua066
+LITORAL_FV,Solar Farms,ASanta220
+ATA-TG2A+0.5TV2C_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+CHUCHINI_FV,Solar Farms,ElPenon110
+DADINCO_FV,Solar Farms,Chillan154
+TREBAL_SOLAR_FV,Solar Farms,SantaMarta220
+VILLA_MOSCOSO_FV,Solar Farms,Miraflores110
+ANDES_U4_FO6,Thermal Gen N. Zone,DAlmagro110
+ATA-TG1A_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1A+TG1B+TV1C_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+MALINKE_FV,Solar Farms,AMelipilla220
+NIHUE_FV,Solar Farms,AMelipilla220
+COSAPILLA,Hydro Gen Group C,PAlmonte110
+EL_TORO_N2,Hydro Gen Group C,Condores220
+SARCO_EO,Wind Farms,Maitencillo220
+EL_PIQUERO_FV,Solar Farms,ASanta220
+JAMA_2_FV,Solar Farms,Salar220
+SAN_LORENZO_U3,Thermal Gen N. Zone,DAlmagro220
+LA_ESTANCIA_FV,Solar Farms,Rapel220
+LA_GAMBOINA_FV,Solar Farms,Rancagua154
+ESPINOS_BL1,Thermal Gen N. Zone,LVilos220
+KELAR-TG1+0.5TV_DIE,Thermal Gen N. Zone,Kapatur220_BP1
+COLINA_FV,Solar Farms,PPeuco110
+CRUZ_SOLAR_I_FV,Solar Farms,LVegas110
+DON_MARIANO_FV,Solar Farms,Tinguiririca154
+TECHOS_DE_ALTAMIRA_FV,Solar Farms,Florida110
+TIL_TIL_FV,Solar Farms,LVegas110
+ANTUCO_U1,Hydro Gen Group A,Antuco220
+SANTA_LAURA_FV,Solar Farms,LVilos220
+SANISIDRO_CC_GNL,Termicas Ficticias,SanLuis220
+RIO_COLORADO,Hydro Gen Group B,Pehuenche220
+SAN_ISIDRO-TG_GNL_D,Thermal Gen S. Zone,SanLuis220
+SANTA_LIDIA,Thermal Gen S. Zone,Charrua220
+YUNGAY_U4_DIE,Thermal Gen S. Zone,Charrua154
+MILAN_A_FV,Solar Farms,Teno154
+OLIVIA_FV,Solar Farms,PAzucar110
+ALLIPEN,Hydro Gen Group C,Temuco220
+CALLAO,Hydro Gen Group C,Rahue220
+QUILLAY_FV,Solar Farms,AMelipilla220
+SANTA_ADRIANA_FV,Solar Farms,AMelipilla220
+SANTA_FE_FV,Solar Farms,SJavier066
+ENAP_ACONCAGUA,Thermal Gen S. Zone,Torquemada110
+LICANTEN_BL2,Thermal Gen S. Zone,Itahue154
+UJINA_U1_DIE,Thermal Gen N. Zone,Collahuasi220
+CANDELARIA_2_GN_A,Thermal Gen S. Zone,Candelaria220
+CHUYACA,Thermal Gen S. Zone,Rahue220
+CMPC_LAJA_BL4,Thermal Gen S. Zone,Charrua220
+EL_HUASO_FV,Solar Farms,ASanta220
+ENCINO_FV,Solar Farms,SFcoMost066
+ATA-TG2A+0.5TV2C_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+MEJILLONES_3-TG+TV_GNL_C,Thermal Gen N. Zone,LosChangos220
+TOCOPILLA_U16-TG_GNL_INF,Thermal Gen N. Zone,Tocopilla220_BP1
+EL_DIVISADERO_FV,Solar Farms,ElPenon110
+ATA-TG2A+TG2B+TV2C_DIE,Thermal Gen N. Zone,Atacama220_BP1
+ESPINOS_BL2,Thermal Gen N. Zone,LVilos220
+KELAR-TG1_GNL_B,Thermal Gen N. Zone,Kapatur220_BP1
+CASTANO_FV,Solar Farms,Rancagua154
+LA_CONFLUENCIA,Hydro Gen Group B,PNegro220
+NEWEN_DIE,Thermal Gen S. Zone,SVicente154
+NUEVA_RENCA-TG+TV_GN_B,Thermal Gen S. Zone,Renca110
+SANISIDRO_CC_DIE,Termicas Ficticias,SanLuis220
+ATA-TG1B_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG_GNL_A,Thermal Gen S. Zone,SanLuis220
+VALDIVIA_BL2_PINO,Thermal Gen S. Zone,Ciruelos220
+MESETA_DE_LOS_ANDES_FV,Solar Farms,Polpaico220
+EL_MANZANO,Hydro Gen Group C,Temuco220
+LA_MONTANA_1,Hydro Gen Group C,Teno154
+AEROPUERTO_FV,Solar Farms,Talca066
+SAN_ISIDRO_FV,Solar Farms,Rancagua154
+SANTA_CECILIA_FV,Solar Farms,Maitencillo110
+ESPERANZA_DS1,Thermal Gen S. Zone,Sauzal154
+UJINA_U2_HFO,Thermal Gen N. Zone,Collahuasi220
+EL_PITIO_FV,Solar Farms,Parral154
+ITIHUE_FV,Solar Farms,Parral154
+TALTAL_1_GNL_B,Thermal Gen N. Zone,Paposo220
+TALTAL_1_GNL_E,Thermal Gen N. Zone,Paposo220
+LAUREL_FV,Solar Farms,AMelipilla220
+LINARES_SOLAR_FV,Solar Farms,Linares154
+LOS_GIRASOLES_FV,Solar Farms,CNavia110
+ATA-TG2A+0.5TV2C_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+ATA_CC1_TGB_DIE,Termicas Ficticias,Atacama220_BP1
+CHACABUQUITO,Hydro Gen Group B,Polpaico220
+NUEVA_RENCA-TG+TV_GNL_C,Thermal Gen S. Zone,Renca110
+PLACILLA,Thermal Gen S. Zone,ASanta110
+SAN_ISIDRO_2-TG_GNL_A,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO_2-TG+TV_DIE,Thermal Gen S. Zone,SanLuis220
+BAT_ALFALFAL_VR2_LOAD,Hydro Ficticias,Alfalfal220
+ANDES_U3_DIE,Thermal Gen N. Zone,DAlmagro110
+ATA-TG1B+0.5TV1C_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+YUNGAY_U1_GNL_A,Thermal Gen S. Zone,Charrua154
+OLIVIER_FV,Solar Farms,PAzucar110
+MAISAN,Hydro Gen Group C,Temuco220
+MARIA_ELENA,Hydro Gen Group C,Rahue220
+ALTOS_TILTIL_FV,Solar Farms,PPeuco110
+SALERNO_FV,Solar Farms,AMelipilla220
+SAN_CAMILO_FV,Solar Farms,Itahue154
+TOCOPILLA-TG3_GN_A,Thermal Gen N. Zone,Tocopilla220_BP1
+EL_OLIVAR_FV,Solar Farms,Charrua154
+ERINOME_FV,Solar Farms,Itahue154
+JOTABECHE_FV,Solar Farms,Cardones110
+MEJILLONES_3-TG+TV_GNL_A,Thermal Gen N. Zone,LosChangos220
+LIPANGUE_FV,Solar Farms,CNavia110
+GUACOLDA_5,Thermal Gen N. Zone,Guacolda220
+DEL_DESIERTO_FV,Solar Farms,Andes220
+SOL_DEL_NORTE_FV,Solar Farms,PAzucar110
+PEHUENCHE_U2,Hydro Gen Group A,Pehuenche220
+CHAPIQUINA,Hydro Gen Group B,Arica066
+MAMPIL,Hydro Gen Group B,Rucue220
+NEHUENCO_9B_GNL_E,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_9B_GNL_INF,Thermal Gen S. Zone,SanLuis220
+NUEVA_RENCA-FA_GN_A,Thermal Gen S. Zone,Renca110
+ANDINA,Thermal Gen N. Zone,Chacaya220
+ATA-TG1A_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1B_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+YUNGAY_U3_GN_A,Thermal Gen S. Zone,Charrua154
+NAHUEN_FV,Solar Farms,AMelipilla220
+NIQUEN_FV,Solar Farms,Parral154
+ABANICO,Hydro Gen Group C,Charrua154
+MALLARAUCO,Hydro Gen Group C,AMelipilla220
+SAN_ISIDRO_2-TG+TV-FSTVU_GNL_INF,Thermal Gen S. Zone,SanLuis220
+MALLECO_NORTE_EO,Wind Farms,Mulchen220
+SAN_GABRIEL_EO,Wind Farms,Mulchen220
+ANTONIA_FV,Solar Farms,Malloa154
+AVEL_FV,Solar Farms,Charrua154
+NEHUENCO_1-TG_GNL_A,Thermal Gen S. Zone,SanLuis220
+CONCON,Thermal Gen S. Zone,Torquemada110
+IDAHUE_DEL_VERANO_FV,Solar Farms,Malloa154
+CALAMA_1_FV,Solar Farms,Salar220
+LAS_CHACRAS_FV,Solar Farms,Rapel220
+LOS_LIBERTADORES_FV,Solar Farms,PCortes154
+EL_SALVADOR,Thermal Gen N. Zone,DAlmagro110
+KELAR-TG1+TG2+TV_GN_A,Thermal Gen N. Zone,Kapatur220_BP1
+CANDELARIA_FV,Solar Farms,Rancagua154
+CHANARES_FV,Solar Farms,DAlmagro110
+VALLE_SOLAR_ESTE_FV,Solar Farms,Cardones110
+CIPRESES_U2,Hydro Gen Group A,Cipreses154
+RAPEL_U2,Hydro Gen Group A,Rapel220
+FLORIDA_2,Hydro Gen Group B,Florida110
+NEHUENCO_9B_GNL_F,Thermal Gen S. Zone,SanLuis220
+NUEVA_ALDEA_2,Thermal Gen S. Zone,SantaElvira066
+ATA-TG1A_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+LUNA_FV,Solar Farms,Malloa154
+MALGARIDA_FV,Solar Farms,Cumbres500
+EL_MIRADOR,Hydro Gen Group C,Charrua220
+RAKI_EO,Wind Farms,Horcones066
+ANDES_2A_FV,Solar Farms,Andes220
+QUEMADOS_FV,Solar Farms,Florida110
+LOS_GUINDOS_2,Thermal Gen S. Zone,Charrua220
+CORONEL_GNL_B,Thermal Gen S. Zone,Coronel066
+GR_PITAO_FV,Solar Farms,Teno154
+MEJILLONES_3-TG_DIE,Thermal Gen N. Zone,LosChangos220
+LA_LIGUA_FV,Solar Farms,LVilos220
+LA_QUINTA_FV,Solar Farms,Florida110
+LAS_MAJADAS_FV,Solar Farms,ElPenon110
+LAS_TERRAZAS_FV,Solar Farms,Cardones110
+CARDONES,Thermal Gen N. Zone,Cardones220
+EMELDA_U2,Thermal Gen N. Zone,DAlmagro110
+CHACABUCO_FV,Solar Farms,Polpaico220
+COYA_FV,Solar Farms,Crucero220
+SLK_CB_NUEVE_FV,Solar Farms,Polpaico220
+TREBO_FV,Solar Farms,AMelipilla220
+LOMA_ALTA,Hydro Gen Group A,Pehuenche220
+NUEVA_RENCA-FA_GNL_A,Thermal Gen S. Zone,Renca110
+NUEVA_RENCA-TG+TV_GNL_E,Thermal Gen S. Zone,Renca110
+BAT_URIBE_SOLAR_FV,Hydro Ficticias,Esmeralda110
+MALLOCO_FV,Solar Farms,AJahuel110
+LOS_CORRALES_1,Hydro Gen Group C,Rahue220
+LEBU_3_EO,Wind Farms,Horcones066
+PLACILLA_FV,Solar Farms,ASanta110
+NEHUENCO_2-TG_GNL_C,Thermal Gen S. Zone,SanLuis220
+CANDELARIA_1_GNL_D,Thermal Gen S. Zone,Candelaria220
+CANDELARIA_1_GNL_F,Thermal Gen S. Zone,Candelaria220
+TALTAL_2_GNL_D,Thermal Gen N. Zone,Paposo220
+LIMA_FV,Solar Farms,Rancagua154
+LOS_CISNES_FV,Solar Farms,AMelipilla220
+ATA-TG2A+TG2B+TV2C_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+GUACOLDA_4,Thermal Gen N. Zone,Guacolda220
+CLEMENTINA_FV,Solar Farms,Polpaico220
+RAPEL_U4,Hydro Gen Group A,Rapel220
+NUEVA_RENCA-FA_GNL_B,Thermal Gen S. Zone,Renca110
+LOS_TORDOS_FV,Solar Farms,Talca066
+TOCOPILLA_U16_CC_GNL,Termicas Ficticias,Tocopilla220_BP1
+BAT_ALFALFAL_VR2,Hydro Ficticias,Alfalfal220
+ANDES_U3_FO6,Thermal Gen N. Zone,DAlmagro110
+ATA-TG1A_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+PARAGUAY_FV,Solar Farms,Itahue154
+PENAFLOR_FV,Solar Farms,AJahuel110
+TOLPAN_SUR_EO,Wind Farms,Mulchen220
+NEHUENCO_2-TG+TV_GNL_E,Thermal Gen S. Zone,SanLuis220
+CMPC_PACIFICO_BL3,Thermal Gen S. Zone,Charrua220
+EL_PERAL_FV,Solar Farms,Paine154
+EL_SALITRAL_FV,Solar Farms,ElPenon110
+GABARDO_VERANO_FV,Solar Farms,Paine154
+HORNITOS_FV,Solar Farms,Cardones110
+KELAR-TG2_GNL_B,Thermal Gen N. Zone,Kapatur220_BP1
+LA_LAJUELA_FV,Solar Farms,Rapel220
+LOS_JOTES_FV,Solar Farms,LVilos220
+KELAR-TG1_GNL_D,Thermal Gen N. Zone,Kapatur220_BP1
+LAJA_I,Hydro Gen Group A,Charrua220
+EL_PASO,Hydro Gen Group B,Tinguiririca154
+NUEVA_RENCA-TG+TV_DIE,Thermal Gen S. Zone,Renca110
+SAN_ISIDRO_2-TG+TV_GNL_INF,Thermal Gen S. Zone,SanLuis220
+BAT_COYA_FV,Hydro Ficticias,Crucero220
+BAT_URIBE_SOLAR_FV_LOAD,Hydro Ficticias,Esmeralda110
+PULLINQUE,Hydro Gen Group B,Valdivia220
+ANDES_U1_FO6,Thermal Gen N. Zone,DAlmagro110
+ATA-TG1B_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+MUTUPIN_FV,Solar Farms,Parral154
+CHANLEUFU,Hydro Gen Group C,Rahue220
+LA_VINA,Hydro Gen Group C,Mulchen220
+LOS_CURUROS_EO,Wind Farms,LaCebada220
+UCUQUER_2_EO,Wind Farms,Rapel220
+PILPILEN_FV,Solar Farms,Rapel220
+POZO_ALMONTE_2_FV,Solar Farms,PAlmonte110
+KELAR-TG2_GNL_E,Thermal Gen N. Zone,Kapatur220_BP1
+MEJILLONES_3-TG+TV_GNL_INF,Thermal Gen N. Zone,LosChangos220
+PUNTA_COLORADA_IFO,Thermal Gen N. Zone,PColorada220
+LA_ESTRELLA_EO,Wind Farms,Rapel220
+DON_JORGE_FV,Solar Farms,Teno154
+VICENTE_FV,Solar Farms,Florida110
+SAN_ISIDRO_2-TG+TV-FSTVU_GNL_E,Thermal Gen S. Zone,SanLuis220
+ATA-TG1B+0.5TV1C_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV-FSTVD_GNL_INF,Thermal Gen S. Zone,SanLuis220
+DONA_HILDA,Hydro Gen Group C,Rahue220
+LLAUQUEREO,Hydro Gen Group C,Rucue220
+SAN_PEDRO_EO,Wind Farms,Chiloe110
+AYLA_FV,Solar Farms,Malloa154
+SAN_FRANCISCO_FV,Solar Farms,PPeuco110
+CANDELARIA_1_GNL_C,Thermal Gen S. Zone,Candelaria220
+CMPC_LAJA_BL2,Thermal Gen S. Zone,Charrua220
+HORMIGA_FV,Solar Farms,Polpaico220
+TALTAL_2_DIE,Thermal Gen N. Zone,Paposo220
+TOCOPILLA_U16-TG+TV_GNL_B,Thermal Gen N. Zone,Tocopilla220_BP1
+LA_COLONIA_FV,Solar Farms,Paine154
+TAMARUGO_FV,Solar Farms,PAlmonte110
+UTFSM_VITACURA_FV,Solar Farms,Almendros110
+LIRCAY,Hydro Gen Group B,Maule154
+NEHUENCO_1_CC_GNL,Termicas Ficticias,SanLuis220
+ATA-TG1A+0.5TV1C_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1B+0.5TV1C_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+PARQUE_VALPARAISO_FV,Solar Farms,LVegas110
+NEGRETE_EO,Wind Farms,Charrua154
+ARGOMEDO_FV,Solar Farms,Tilcoco154
+RIMINI_FV,Solar Farms,AMelipilla220
+PALMUCHO,Hydro Gen Group C,Ralco220
+PEHUI,Hydro Gen Group C,Rahue220
+NEHUENCO_1-TG+TV_GNL_C,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_1-TG+TV_GNL_G,Thermal Gen S. Zone,SanLuis220
+COLMITO_GNL_INF,Thermal Gen S. Zone,Torquemada110
+FLORENCIA_FV,Solar Farms,LVilos220
+LA_MURALLA_FV,Solar Farms,Rancagua154
+LA_PAZ_FV,Solar Farms,SCristobal110
+KELAR-TG1_GNL_INF,Thermal Gen N. Zone,Kapatur220_BP1
+DONA_IGNA_FV,Solar Farms,AMelipilla220
+ANGOSTURA_U2,Hydro Gen Group A,LosNotros220
+LAS_LAJAS,Hydro Gen Group B,Florida110
+NUEVA_RENCA-TG+TV_GN_A,Thermal Gen S. Zone,Renca110
+NUEVA_RENCA-TG+TV_GNL_F,Thermal Gen S. Zone,Renca110
+LOS_TAURETES_FV,Solar Farms,Florida110
+SAN_ISIDRO-TG+TV-FSTVD_GNL_E,Thermal Gen S. Zone,SanLuis220
+SANTA_MARTA,Thermal Gen S. Zone,SantaMarta220
+PAILLIHUE_FV,Solar Farms,Charrua154
+PEGASUS_FV,Solar Farms,Chillan154
+PLAYERITO_FV,Solar Farms,Parral154
+QUINANTU_FV,Solar Farms,Talca066
+LOS_GUINDOS,Thermal Gen S. Zone,Charrua220
+ANTILHUE_U2,Thermal Gen S. Zone,Valdivia220
+CEMENTOS_BIOBIO_DIE,Thermal Gen S. Zone,Teno154
+CEMENTOS_BIOBIO_FO6,Thermal Gen S. Zone,Teno154
+TALTAL_1_DIE,Thermal Gen N. Zone,Paposo220
+EL_CUERVO_FV,Solar Farms,Teno154
+ATA-TG2B+0.5TV2C_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+DIEGO_DE_ALMAGRO,Thermal Gen N. Zone,DAlmagro110
+CANELILLO_FV,Solar Farms,ElPenon110
+SOL_DEL_NORTE_ANDES_FV,Solar Farms,Andes220
+ATA_CC1_TGA_GNL,Termicas Ficticias,Atacama220_BP1
+EL_TORO_U3,Hydro Gen Group A,Antuco220
+CUMBRES,Hydro Gen Group B,Rahue220
+LA_HIGUERA,Hydro Gen Group B,PNegro220
+PIEDRAS_NEGRAS,Hydro Gen Group B,Tinguiririca154
+NAZARINO_VERANO_FV,Solar Farms,Chena110
+LAS_VERTIENTES,Hydro Gen Group C,Florida110
+LOS_PORTONES,Hydro Gen Group C,Rahue220
+PUNTA_COLORADA_EO,Wind Farms,PColorada220
+ENERGIA_PACIFICO,Thermal Gen S. Zone,SFcoMost066
+ESCUADRON,Thermal Gen S. Zone,Fopaco154
+NEHUENCO_1-FA_GNL_D,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG_GNL_INF,Thermal Gen S. Zone,SanLuis220
+TOCOPILLA_U16-TG+TV_GNL_INF,Thermal Gen N. Zone,Tocopilla220_BP1
+ANTILHUE_U1,Thermal Gen S. Zone,Valdivia220
+EL_RAYADOR_FV,Solar Farms,PAzucar110
+LA_BLANQUINA_1_FV,Solar Farms,Rancagua154
+LO_CHACON_FV,Solar Farms,Rapel220
+ATA-TG2B+0.5TV2C_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+LA_CABANA_EO,Wind Farms,Mulchen220
+CONDOR_PETORCA_FV,Solar Farms,Nogales220
+JUNCAL,Hydro Gen Group B,Polpaico220
+ARICA_GM,Thermal Gen N. Zone,DArica066
+MELI_FV,Solar Farms,SFcoMost066
+PLAYERO_FV,Solar Farms,Parral154
+NEHUENCO_2-TG+TV_GNL_B,Thermal Gen S. Zone,SanLuis220
+UJINA_U2_DIE,Thermal Gen N. Zone,Collahuasi220
+CMPC_LAJA_BL3,Thermal Gen S. Zone,Charrua220
+MEJILLONES_1,Thermal Gen N. Zone,Chacaya220
+MEJILLONES_3-TG_GNL_D,Thermal Gen N. Zone,LosChangos220
+TOCOPILLA_U16-TG+TV_DIE,Thermal Gen N. Zone,Tocopilla220_BP1
+LAS_MERCEDES_I_FV,Solar Farms,SFcoMost066
+LAS_PERDICES_FV,Solar Farms,Talca066
+LOS_GORRIONES_FV,Solar Farms,Parral154
+GUACOLDA_3,Thermal Gen N. Zone,Guacolda220
+EL_NOGAL_EO,Wind Farms,Mulchen220
+CAMPOS_DEL_SOL_FV,Solar Farms,CPinto220
+CURICURA_FV,Solar Farms,Teno154
+ATA_CC1_TGB_GNL,Termicas Ficticias,Atacama220_BP1
+RALCO_U1,Hydro Gen Group A,Ralco220
+MARIPOSAS,Hydro Gen Group B,Maule154
+PUNTA_DEL_VIENTO,Hydro Gen Group C,Tinguiririca154
+YUNGAY_U2_GNL_A,Thermal Gen S. Zone,Charrua154
+ATACAMA_EO,Wind Farms,Maitencillo220
+ORQUIDEA_FV,Solar Farms,ElPenon110
+LOMA_LOS_COLORADOS_1,Thermal Gen S. Zone,PPeuco110
+LOS_VIENTOS-CNAVIA,Thermal Gen S. Zone,LVegas110_exp
+TOCOPILLA_U16-TG+TV_GNL_E,Thermal Gen N. Zone,Tocopilla220_BP1
+CMPC_LAJA_BL5,Thermal Gen S. Zone,Charrua220
+JAHUEL_FV,Solar Farms,Polpaico220
+JAURURO_FV,Solar Farms,LVilos220
+MEJILLONES_3-TG+TV_GNL_E,Thermal Gen N. Zone,LosChangos220
+TOCOPILLA_U16-TG_GNL_B,Thermal Gen N. Zone,Tocopilla220_BP1
+LIQUIDAMBAR_FV,Solar Farms,Polpaico220
+COLTAUCO_ALMENDRO_FV,Solar Farms,Malloa154
+SOL_DEL_MAULE_FV,Solar Farms,Maule154
+COLBUN_U2,Hydro Gen Group A,Colbun220
+JUNCALITO,Hydro Gen Group B,Polpaico220
+ATA-TG2A_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+VALDIVIA_BL4_EUCA,Thermal Gen S. Zone,Ciruelos220
+CANELA_EO,Wind Farms,LPalmas220
+PASTRAN_FV,Solar Farms,Mapal154
+PEPA_SOLAR_1_FV,Solar Farms,Paine154
+MELO,Hydro Gen Group C,Charrua154
+MUNILQUE_1,Hydro Gen Group C,Charrua154
+SAN_ISIDRO-FA_GNL_B,Thermal Gen S. Zone,SanLuis220
+LOS_VIENTOS-CNAVIA_GNL_B,Thermal Gen S. Zone,LVegas110_exp
+UJINA_U4_HFO,Thermal Gen N. Zone,Collahuasi220
+CANDELARIA_2_GNL_D,Thermal Gen S. Zone,Candelaria220
+EL_PILPEN_FV,Solar Farms,SFcoMost066
+MEJILLONES_2,Thermal Gen N. Zone,Chacaya220
+EL_CHERCAN_FV,Solar Farms,Teno154
+LO_BOZA_FV,Solar Farms,Renca110
+ATA-TG2B+0.5TV2C_DIE,Thermal Gen N. Zone,Atacama220_BP1
+CARACOLES_FV,Solar Farms,Linares154
+CRUCERO_FV,Solar Farms,Rapel220
+HORNITOS_CH,Hydro Gen Group B,Polpaico220
+NEHUENCO_9B_GNL_G,Thermal Gen S. Zone,SanLuis220
+NUEVA_RENCA-FA_GNL_INF,Thermal Gen S. Zone,Renca110
+SAN_ISIDRO_2-TG+TV_GNL_B,Thermal Gen S. Zone,SanLuis220
+TALTAL_2_CA_GNL,Termicas Ficticias,Paposo220
+BAT_ANDES_2B_FV_LOAD,Hydro Ficticias,Andes220
+PURISIMA,Hydro Gen Group C,Itahue154
+ARICA_M1,Thermal Gen N. Zone,DArica066
+SAN_ISIDRO-TG+TV_GNL_B,Thermal Gen S. Zone,SanLuis220
+LUCE_SOLAR_FV,Solar Farms,Chillan154
+NAN_FV,Solar Farms,Rancagua154
+NORTE_CHICO_1_FV,Solar Farms,LVilos220
+PALTO_SUNLIGHT_FV,Solar Farms,LVegas110
+NEHUENCO_9B_GNL_C,Thermal Gen S. Zone,SanLuis220
+RENAICO_EO,Wind Farms,Mulchen220
+ALHUE_FV,Solar Farms,Rapel220
+CABILSOL_FV,Solar Farms,LVilos220
+ROVIAN_FV,Solar Farms,SVicente154
+PICHILONCO,Hydro Gen Group C,Rahue220
+LOMA_LOS_COLORADOS_2,Thermal Gen S. Zone,PPeuco110
+NEHUENCO_1-FA_GNL_B,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_1-TG_GNL_G,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_1-TG+TV_GN_A,Thermal Gen S. Zone,SanLuis220
+CANDELARIA_2_DIE,Thermal Gen S. Zone,Candelaria220
+EL_RECONQUISTADOR_FV,Solar Farms,Chillan154
+LAGUNILLA_FV,Solar Farms,ElPenon110
+KELAR-TG1_GNL_A,Thermal Gen N. Zone,Kapatur220_BP1
+KELAR-TG1+TG2+TV_GNL_A,Thermal Gen N. Zone,Kapatur220_BP1
+TIERRA_FV,Solar Farms,Cardones110
+CHIBURGO,Hydro Gen Group B,Colbun220
+SAN_ISIDRO_2-TG+TV-FSTVU_DIE,Thermal Gen S. Zone,SanLuis220
+SANTA_LUCIA_FV,Solar Farms,ElPenon110
+VINALES_BL2,Thermal Gen S. Zone,Constitucion066
+MANDINGA_FV,Solar Farms,AMelipilla220
+ORION_FV,Solar Farms,Chillan154
+CORRALES,Hydro Gen Group C,Tinguiririca154
+PLOMO_DEL_VERANO_FV,Solar Farms,SantaMarta220
+NEHUENCO_2-TG_GNL_E,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_9B_DIE,Thermal Gen S. Zone,SanLuis220
+FOSTER_FV,Solar Farms,Mapal154
+FULGOR_FV,Solar Farms,Charrua154
+TALTAL_1_GNL_A,Thermal Gen N. Zone,Paposo220
+COVADONGA_FV,Solar Farms,DAlmagro110
+DARLIN_FV,Solar Farms,Paine154
+DONIHUE_FV,Solar Farms,Rancagua154
+YAHUTELA_FV,Solar Farms,ASanta220
+RAPEL_U1,Hydro Gen Group A,Rapel220
+ANCOA,Hydro Gen Group B,Linares154
+NEWEN_GNL_B,Thermal Gen S. Zone,SVicente154
+QUINTERO_1A_GNL_E,Thermal Gen S. Zone,Quintero220
+SAN_ISIDRO-FA_GNL_D,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO-TG_DIE,Thermal Gen S. Zone,SanLuis220
+YUNGAY_U2_DIE,Thermal Gen S. Zone,Charrua154
+MOSTAZAL_FV,Solar Farms,SFcoMost066
+PAMPA_TIGRE_FV,Solar Farms,Ohiggins220_BP1
+DOS_VALLES,Hydro Gen Group C,PNegro220
+LA_MONTANA_2,Hydro Gen Group C,Teno154
+NEHUENCO_1-TG+TV_GNL_A,Thermal Gen S. Zone,SanLuis220
+CMPC_PACIFICO_BL1,Thermal Gen S. Zone,Charrua220
+EL_PIUQUEN_FV,Solar Farms,Chillan154
+ESPERANZA_2_FV,Solar Farms,Rapel220
+ATA-TG2A+0.5TV2C_DIE,Thermal Gen N. Zone,Atacama220_BP1
+MEJILLONES_3-TG_GNL_INF,Thermal Gen N. Zone,LosChangos220
+LALACKAMA_2_FV,Solar Farms,Francisco220
+LAS_SALINAS_FV,Solar Farms,Crucero220
+ATA-TG2A+TG2B+TV2C_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+KELAR-TG1+0.5TV_GNL_C,Thermal Gen N. Zone,Kapatur220_BP1
+EL_TORO_U2,Hydro Gen Group A,Antuco220
+RAPEL_U3,Hydro Gen Group A,Rapel220
+SAN_ISIDRO_2-TG+TV-FSTVU_GN_A,Thermal Gen S. Zone,SanLuis220
+LOS_VIENTOS_CA,Termicas Ficticias,LVegas110
+MEJILLONES_3_CA_GNL,Termicas Ficticias,LosChangos220
+ATA-TG1A+TG1B+TV1C_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV_GNL_D,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO-TG+TV-FSTVD_GNL_B,Thermal Gen S. Zone,SanLuis220
+MAIMALICAN_FV,Solar Farms,LVilos220
+EL_AGRIO,Hydro Gen Group C,Mulchen220
+MUCHI,Hydro Gen Group C,Rahue220
+LAS_PENAS_EO,Wind Farms,Charrua154
+AROMO_VERANO_FV,Solar Farms,Rancagua154
+SAN_EMILIO_1_FV,Solar Farms,Itahue154
+SANTA_CRUZ_FV,Solar Farms,SFcoMost066
+NEHUENCO_2-TG_GNL_B,Thermal Gen S. Zone,SanLuis220
+GUADALAO_FV,Solar Farms,Rapel220
+J_SOLER_M_FV,Solar Farms,Teno154
+JARDIN_SOLAR_PETORCA_FV,Solar Farms,LVilos220
+LA_HUAYCA_2_FV,Solar Farms,PAlmonte110
+LOS_PERALES_FV,Solar Farms,Quillota220
+ATA-TG2A+0.5TV2C_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG2B_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+EL_PENON,Thermal Gen N. Zone,ElPenon110
+KELAR-TG1_DIE,Thermal Gen N. Zone,Kapatur220_BP1
+CARACAS_2_FV,Solar Farms,LVilos220
+ATA_CC2_TGA_DIE,Termicas Ficticias,Atacama220_BP1
+PEHUENCHE_U1,Hydro Gen Group A,Pehuenche220
+QUINTERO_1A_GNL_B,Thermal Gen S. Zone,Quintero220
+QUINTERO_1B_GNL_D,Thermal Gen S. Zone,Quintero220
+SAN_ISIDRO_2-TG_GNL_F,Thermal Gen S. Zone,SanLuis220
+PICUNCHE_FV,Solar Farms,AJahuel220
+SANISIDRO_CA_GNL,Termicas Ficticias,SanLuis220
+MOYA_FV,Solar Farms,Charrua066
+SAN_ISIDRO-FA_GNL_A,Thermal Gen S. Zone,SanLuis220
+BERGAMO_FV,Solar Farms,Teno154
+RINCONADA_FV,Solar Farms,SVicente154
+SANTA_FRANCISCA_FV,Solar Farms,PAzucar110
+CANDELARIA_2_GNL_A,Thermal Gen S. Zone,Candelaria220
+CANDELARIA_2_GNL_F,Thermal Gen S. Zone,Candelaria220
+EL_QUELTEHUE_FV,Solar Farms,Batuco110
+EL_SAUCE_FV,Solar Farms,Rapel220
+NUEVA_TOCOPILLA_2,Thermal Gen N. Zone,Norgener220
+LA_ACACIA_FV,Solar Farms,Malloa154
+LA_MANGA_1_FV,Solar Farms,Rapel220
+ATA-TG2A+TG2B+TV2C_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG2A+TG2B+TV2C_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+ATA_CC1_TGA_DIE,Termicas Ficticias,Atacama220_BP1
+EL_TORO_U1,Hydro Gen Group A,Antuco220
+LOS_PUQUIOS_FV,Solar Farms,PAlmonte110
+ROBLERIA,Hydro Gen Group C,Linares154
+TRANQUIL,Hydro Gen Group C,Rahue220
+ATA-TG1A_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1A+0.5TV1C_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG_GNL_E,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO-TG_GNL_F,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO-TG+TV_GNL_C,Thermal Gen S. Zone,SanLuis220
+SAN_ANDRES,Hydro Gen Group B,Tinguiririca154
+DON_WALTERIO,Hydro Gen Group C,Rahue220
+MULCHEN,Hydro Gen Group C,Mulchen220
+LA_FLOR_EO,Wind Farms,Charrua154
+BICENTENARIO_FV,Solar Farms,Parral154
+PIRQUE_FV,Solar Farms,Florida110
+PORTEZUELO_FV,Solar Farms,Rapel220
+REXNER_FV,Solar Farms,Polpaico220
+DEGAN_NAVE12,Thermal Gen S. Zone,Degan110
+ENCON_SOLAR_FV,Solar Farms,Polpaico220
+ESFENA_FV,Solar Farms,LVilos220
+HUAQUELON_FV,Solar Farms,ElPenon110
+OLIVOS_BL1,Thermal Gen N. Zone,LVilos220
+SAN_LORENZO_U2,Thermal Gen N. Zone,DAlmagro220
+TALTAL_1_GNL_INF,Thermal Gen N. Zone,Paposo220
+LOS_CANONES_SUNLIGHT_FV,Solar Farms,LVegas110
+KELAR-TG1+0.5TV_GNL_A,Thermal Gen N. Zone,Kapatur220_BP1
+EL_CERNICALO_1_FV,Solar Farms,Parral154
+ATA-TG1A_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV_DIE,Thermal Gen S. Zone,SanLuis220
+MARIA_PINTO_FV,Solar Farms,AMelipilla220
+PICA_FV,Solar Farms,PAlmonte110
+PUNTA_BAJA_SOLAR_I_FV,Solar Farms,Maitencillo110
+MAPA,Thermal Gen S. Zone,Lagunillas220
+GRANADA_FV,Solar Farms,Linares154
+LA_PORTADA,Thermal Gen N. Zone,Esmeralda110
+LLANOS_BLANCOS,Thermal Gen N. Zone,PAzucar220
+LAS_LECHUZAS_FV,Solar Farms,Chillan154
+LAS_TAGUAS_FV,Solar Farms,PAzucar110
+SOL_DE_DESIERTO_FV,Solar Farms,MariaElena220
+SOL_DE_SEPTIEMBRE_FV,Solar Farms,Renca110
+COYA,Hydro Gen Group B,Sauzal110_BP2
+NEWEN_GN_A,Thermal Gen S. Zone,SVicente154
+SAN_ISIDRO_2-TG+TV_GNL_F,Thermal Gen S. Zone,SanLuis220
+ATA-TG1A+TG1B+TV1C_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG2A_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+SANTA_FE_BL3,Thermal Gen S. Zone,Charrua220
+VALDIVIA_BL3_EUCA,Thermal Gen S. Zone,Ciruelos220
+YUNGAY_U2_GN_A,Thermal Gen S. Zone,Charrua154
+ALENA_EO,Wind Farms,Charrua154
+OCOA_FV,Solar Farms,LVegas110
+PUNTA_PALMERAS_EO,Wind Farms,LPalmas220
+POBLACION_FV,Solar Farms,Rapel220
+SANTA_ESTER_FV,Solar Farms,Chillan154
+LAJA-EVE_1,Thermal Gen S. Zone,Charrua066
+KELAR-TG1+TG2+TV_GNL_INF,Thermal Gen N. Zone,Kapatur220_BP1
+CORONEL_GN_A,Thermal Gen S. Zone,Coronel066
+HOMERO_FV,Solar Farms,SFcoMost066
+JAVIERA_FV,Solar Farms,DAlmagro110
+KELAR-TG2+0.5TV_GNL_C,Thermal Gen N. Zone,Kapatur220_BP1
+MEJILLONES_3-TG+TV_GNL_B,Thermal Gen N. Zone,LosChangos220
+PAS_MEJILLONES,Thermal Gen N. Zone,Mejillones110
+LAS_ARBOLEDAS_FV,Solar Farms,Teno154
+LAS_PALOMAS_FV,Solar Farms,Chillan154
+LAS_TORTOLAS_FV,Solar Farms,Chillan154
+LOS_PATOS_FV,Solar Farms,Itahue154
+KELAR-TG1+TG2+TV_DIE,Thermal Gen N. Zone,Kapatur220_BP1
+ATA_CC1_TV,Termicas Ficticias,Atacama220_BP1
+SAN_ISIDRO_2-TG+TV_GNL_A,Thermal Gen S. Zone,SanLuis220
+QUETENA_FV,Solar Farms,Salar220
+RDCL_SAN_FV,Solar Farms,Quillota110
+NEHUENCO_2-TG+TV_GNL_D,Thermal Gen S. Zone,SanLuis220
+UJINA_U6_HFO,Thermal Gen N. Zone,Collahuasi220
+EL_QUEMADO_FV,Solar Farms,Tinguiririca154
+KELAR-TG2+0.5TV_GNL_A,Thermal Gen N. Zone,Kapatur220_BP1
+TOCOPILLA_U16-TG+TV_GNL_C,Thermal Gen N. Zone,Tocopilla220_BP1
+LA_SILLA_FV,Solar Farms,Maitencillo110
+CIPRES_FV,Solar Farms,Linares154
+CORTIJO_FV,Solar Farms,Charrua066
+DON_ENRIQUE_FV,Solar Farms,ElPenon110
+LICAN,Hydro Gen Group B,Rahue220
+SAN_ISIDRO_2-TG+TV-FSTVU_GNL_C,Thermal Gen S. Zone,SanLuis220
+PUNTILLA,Hydro Gen Group B,Florida110
+RIO_TRUENO,Hydro Gen Group C,Temuco220
+ATA-TG2A_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+AURORA_EO,Wind Farms,Tineo220
+MERCURIO_SUR_FV,Solar Farms,Linares154
+NORTH_WEST_FV,Solar Farms,DonHector220
+CORRENTOSO,Hydro Gen Group C,Rahue220
+ALCALDESA_FV,Solar Farms,Chillan154
+PITRA_FV,Solar Farms,ASanta220
+ESPERANZA_DS2,Thermal Gen S. Zone,Sauzal154
+NEHUENCO_1-TG+TV_GNL_E,Thermal Gen S. Zone,SanLuis220
+EL_ROMERAL_FV,Solar Farms,Tinguiririca154
+ESTERO_FV,Solar Farms,SFcoMost066
+GABRIELA_FV,Solar Farms,PAzucar110
+GUANCHOI_FV,Solar Farms,CPinto220
+TOCOPILLA_U16-TG_GNL_C,Thermal Gen N. Zone,Tocopilla220_BP1
+LAS_TORCAZAS_FV,Solar Farms,Rapel220
+ATA-TG2B_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG2B+0.5TV2C_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+CANESA_1_FV,Solar Farms,LPalmas220
+VALLE_DEL_SOL_FV,Solar Farms,Miraje220
+SANTA_JULIA_FV,Solar Farms,LVilos220
+QUILLAILEO,Hydro Gen Group C,Mulchen220
+ATA-TG1A+TG1B+TV1C_DIE,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1B_GNL_C,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV_GNL_E,Thermal Gen S. Zone,SanLuis220
+AVILES_FV,Solar Farms,Rapel220
+BULNES_LOS_BARONES_FV,Solar Farms,Chillan154
+SAN_JAVIER_FV,Solar Farms,Maule154
+SAN_RAMIRO_FV,Solar Farms,Rapel220
+NEHUENCO_1-TG_GNL_B,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG_GNL_G,Thermal Gen S. Zone,SanLuis220
+UJINA_U5_HFO,Thermal Gen N. Zone,Collahuasi220
+GR_PEUMO_FV,Solar Farms,Malloa154
+MEJILLONES_3-TG+TV_DIE,Thermal Gen N. Zone,LosChangos220
+TOCOPILLA_U16-TG_GNL_D,Thermal Gen N. Zone,Tocopilla220_BP1
+LORETO_FV,Solar Farms,Malloa154
+ATA-TG2B_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+CERRO_PABELLON_U2,Thermal Gen N. Zone,Conchi220
+TIJERAL_FV,Solar Farms,LVilos220
+TRICAHUE_2_FV,Solar Farms,Rapel220
+WILLKA_FV,Solar Farms,Condores220
+QUINTERO_1A_GNL_A,Thermal Gen S. Zone,Quintero220
+NEHUENCO_2_CC_GNL,Termicas Ficticias,SanLuis220
+BAT_ANDES_2B_FV,Hydro Ficticias,Andes220
+SAN_ISIDRO-TG_GN_A,Thermal Gen S. Zone,SanLuis220
+MANAO_FV,Solar Farms,LVegas110
+NEWENTUN_FV,Solar Farms,Rapel220
+RUCATAYO,Hydro Gen Group B,Pichirrahue220
+LA_PALOMA,Hydro Gen Group C,ElPenon110
+LOS_CORRALES_2,Hydro Gen Group C,Rahue220
+ALBOR_FV,Solar Farms,Mulchen220
+ALTO_SOLAR_FV,Solar Farms,Rapel220
+ANAKENA_FV,Solar Farms,ElPenon110
+ANDES_2B_FV,Solar Farms,Andes220
+ASTILLAS_FV,Solar Farms,Maitencillo110
+QUILAPILUN_FV,Solar Farms,Polpaico220
+CANDELARIA_2_GNL_B,Thermal Gen S. Zone,Candelaria220
+COLMITO_GN_A,Thermal Gen S. Zone,Torquemada110
+CANTERA_FV,Solar Farms,Rapel220
+DON_EUGENIO_FV,Solar Farms,Florida110
+TENO_FV,Solar Farms,Teno154
+UTFSM_VALPARAISO_VALDES_FV,Solar Farms,Batuco110
+VILLA_CRUZ_FV,Solar Farms,SJavier066
+ISLA,Hydro Gen Group A,Cipreses154
+LA_MINA,Hydro Gen Group A,Pehuenche220
+CAPULLO,Hydro Gen Group B,Rahue220
+QUINTERO_1A_GNL_C,Thermal Gen S. Zone,Quintero220
+QUINTERO_1B_GNL_C,Thermal Gen S. Zone,Quintero220
+SANTA_ELENA,Hydro Gen Group C,Valdivia220
+SANTA_FE_BL4,Thermal Gen S. Zone,Charrua220
+AUX_DEL_MAIPO,Hydro Gen Group C,Buin110
+BOQUIAMARGO,Hydro Gen Group C,Charrua220
+COMPANIA_2,Hydro Gen Group C,PMontt220
+CABRERO_FV,Solar Farms,Charrua220
+NEHUENCO_2-TG_GNL_F,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG+TV_GN_A,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG+TV_GNL_F,Thermal Gen S. Zone,SanLuis220
+COLIHUES_U1_HFO,Thermal Gen S. Zone,Sauzal154
+CORONEL_GNL_A,Thermal Gen S. Zone,Coronel066
+EL_PELICANO_FV,Solar Farms,DonHector220
+TALTAL_2_GNL_INF,Thermal Gen N. Zone,Paposo220
+TERMOPACIFICO,Thermal Gen N. Zone,Cardones220
+LAS_CODORNICES_FV,Solar Farms,Parral154
+LO_MIRANDA_FV,Solar Farms,Rancagua154
+ATA-TG2A+TG2B+TV2C_GNL_B,Thermal Gen N. Zone,Atacama220_BP1
+EMELDA_U1,Thermal Gen N. Zone,DAlmagro110
+CERRO_DOMINADOR_FV,Solar Farms,Crucero220
+CONDOR_CHEPICA_FV,Solar Farms,Rapel220
+ECLIPSE_FV,Solar Farms,AMelipilla220
+SOL_DE_LILA_FV,Solar Farms,Andes220
+USYA_FV,Solar Farms,Salar220
+ANTUCO_U2,Hydro Gen Group A,Antuco220
+FLORIDA_1,Hydro Gen Group B,Florida110
+SAN_ISIDRO_2-TG_GNL_D,Thermal Gen S. Zone,SanLuis220
+TOCOPILLA_U16_CA_GNL,Termicas Ficticias,Tocopilla220_BP1
+BAT_COYA_FV_LOAD,Hydro Ficticias,Crucero220
+ATA-TG1A_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-FA_GNL_INF,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO-TG_GNL_B,Thermal Gen S. Zone,SanLuis220
+VALDIVIA_BL4_PINO,Thermal Gen S. Zone,Ciruelos220
+YUNGAY_U1_GN_A,Thermal Gen S. Zone,Charrua154
+MANZANO_FV,Solar Farms,Polpaico220
+NILHUE_FV,Solar Farms,Polpaico220
+MSA_1,Hydro Gen Group C,Valdivia220
+SANTA_EMILIA_FV,Solar Farms,SFcoMost066
+LAUTARO_1_BL1,Thermal Gen S. Zone,Lautaro066
+KELAR-TG1+TG2+TV_GNL_E,Thermal Gen N. Zone,Kapatur220_BP1
+CMPC_CORDILLERA_GNL_A,Thermal Gen S. Zone,PAltoCmpc110
+FINIS_TERRAE_FV,Solar Farms,Crucero220
+KELAR-TG2+0.5TV_GNL_INF,Thermal Gen N. Zone,Kapatur220_BP1
+LLANO_DE_LLAMPOS_FV,Solar Farms,Cardones220
+CAPRICORNIO_FV,Solar Farms,Capricornio110
+SATURNO_NORTE_FV,Solar Farms,Linares154
+SUNHUNTER_FV,Solar Farms,ElPenon110
+ALFALFAL,Hydro Gen Group B,Alfalfal220
+ATA-TG1A+TG1B+TV1C_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+CANELA_2_EO,Wind Farms,LPalmas220
+CERRO_TIGRE_EO,Wind Farms,Ohiggins220_BP1
+MACHICURA_FV,Solar Farms,Colbun220
+BIFURCADA,Hydro Gen Group C,Mulchen220
+LOS_MOLLES,Hydro Gen Group C,ElPenon110
+SAN_JUAN_EO,Wind Farms,PColorada220
+UCUQUER_EO,Wind Farms,Rapel220
+BELLAVISTA_1_FV,Solar Farms,Lagunas220
+PUERTO_SECO_FV,Solar Farms,Salar220
+SANTA_INES_FV,Solar Farms,PPeuco110
+LAJA-EVE_2,Thermal Gen S. Zone,Charrua066
+MASISA,Thermal Gen S. Zone,Charrua066
+ILLAPEL_5_FV,Solar Farms,LPalmas220
+CACHIYUYO_FV,Solar Farms,Cardones110
+ATA-TG2B_GNL_E,Thermal Gen N. Zone,Atacama220_BP1
+CHIMBARONGO_FV,Solar Farms,Tinguiririca154
+ATA_CC2_TGB_GNL,Termicas Ficticias,Atacama220_BP1
+QUINTERO_1B_GN_A,Thermal Gen S. Zone,Quintero220
+QUINTERO_1B_GNL_A,Thermal Gen S. Zone,Quintero220
+ATA-TG1A+0.5TV1C_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+LUZ_DEL_NORTE_FV,Solar Farms,CPinto220
+NUEVO_QUILLAGUA_FV,Solar Farms,MariaElena220
+PAINE_FV,Solar Farms,Salar220
+SAN_PEDRO_2_EO,Wind Farms,Chiloe110
+TALINAY_PONIENTE_EO,Wind Farms,Talinay220
+ROSARIO_FV,Solar Farms,SFcoMost066
+NEHUENCO_1-TG_GNL_D,Thermal Gen S. Zone,SanLuis220
+CANDELARIA_2_GNL_INF,Thermal Gen S. Zone,Candelaria220
+CMPC_CORDILLERA_GNL_B,Thermal Gen S. Zone,PAltoCmpc110
+FILOMENA_FV,Solar Farms,Polpaico220
+HELIOS_FV,Solar Farms,LVegas110
+KELAR-TG2+0.5TV_GNL_B,Thermal Gen N. Zone,Kapatur220_BP1
+ATA-TG2A+0.5TV2C_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG2A+TG2B+TV2C_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+SOL_DE_LOS_ANDES_FV,Solar Farms,DAlmagro110
+QUILLECO,Hydro Gen Group A,Rucue220
+LA_CONFIANZA,Hydro Gen Group B,Rucue220
+SAN_GREGORIO,Thermal Gen S. Zone,Linares154
+NUEVA_RENCA_CC_GNL,Termicas Ficticias,Renca110
+BAT_ALFALFAL_VR1_CSFRS,Hydro Ficticias,Alfalfal220
+ANDES_U2_DIE,Thermal Gen N. Zone,DAlmagro110
+ANGAMOS_1,Thermal Gen N. Zone,Angamos220
+SAN_JAVIER_2,Thermal Gen S. Zone,Constitucion066
+PAMPA_SOLAR_NORTE_FV,Solar Farms,Cachiyuyal220
+EL_DIUTO,Hydro Gen Group C,Charrua154
+LOS_OLMOS_EO,Wind Farms,Mulchen220
+PUENTE_FV,Solar Farms,Chena110
+RODEO_FV,Solar Farms,LVegas110
+ROMERIA_FV,Solar Farms,Teno154
+SAN_PEDRO_GPG_FV,Solar Farms,Salar220
+LOS_VIENTOS_GNL_B,Thermal Gen S. Zone,LVegas110
+KELAR-TG2+0.5TV_DIE,Thermal Gen N. Zone,Kapatur220_BP1
+LA_CHIMBA_BIS_FV,Solar Farms,ElPenon110
+ATA-TG2B+0.5TV2C_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+CKILIR_FV,Solar Farms,Esmeralda110
+COCHARCAS_FV,Solar Farms,Chillan154
+TRICA_DOS_FV,Solar Farms,Talca066
+UTFSM_VINA_DEL_MAR_FV,Solar Farms,Batuco110
+DIGUA,Hydro Gen Group B,Ancoa220
+LOS_QUILOS,Hydro Gen Group B,Polpaico220
+QUINTERO_1A_GNL_F,Thermal Gen S. Zone,Quintero220
+QUINTERO_1B_DIE,Thermal Gen S. Zone,Quintero220
+SAN_ISIDRO_2-TG_GNL_INF,Thermal Gen S. Zone,SanLuis220
+ATA-TG1B_DIE,Thermal Gen N. Zone,Atacama220_BP1
+PELUMPEN_FV,Solar Farms,LVegas110
+BOLERO_1_FV,Solar Farms,Laberinto220
+SALVADOR_FV,Solar Farms,DAlmagro110
+NEHUENCO_1-FA_GNL_G,Thermal Gen S. Zone,SanLuis220
+ESPERANZA_FV,Solar Farms,DAlmagro110
+FOTOVOLT_LIN_FV,Solar Farms,Linares154
+KAUFMANN_FV,Solar Farms,Batuco110
+MANTOS_BLANCOS,Thermal Gen N. Zone,Mantos220
+TALTAL_1_GNL_C,Thermal Gen N. Zone,Paposo220
+CALLE_LARGA_FV,Solar Farms,Polpaico220
+LOS_LAGOS_FV,Solar Farms,Rancagua154
+HUASCO-TG_U3_IFO,Thermal Gen N. Zone,Huasco110
+CHUCAO_FV,Solar Farms,Parral154
+SANTUARIO_FV,Solar Farms,Polpaico220
+CIPRESES_U1,Hydro Gen Group A,Cipreses154
+LOS_HIERROS,Hydro Gen Group B,Pehuenche220
+LOS_TILOS_FV,Solar Farms,LVegas110
+PIDUCO_FV,Solar Farms,Talca066
+ATA-TG1B+0.5TV1C_DIE,Thermal Gen N. Zone,Atacama220_BP1
+PAMA_FV,Solar Farms,ElPenon110
+EL_TARTARO,Hydro Gen Group C,Polpaico220
+MESAMAVIDA_EO,Wind Farms,Charrua154
+SAN_ANTONIO_FV,Solar Farms,Linares154
+LINARES,Thermal Gen S. Zone,Linares154
+LOS_VIENTOS_GNL_A,Thermal Gen S. Zone,LVegas110
+NEHUENCO_1-FA_GNL_F,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_1-TG_GNL_E,Thermal Gen S. Zone,SanLuis220
+NEHUENCO_2-TG+TV_GNL_G,Thermal Gen S. Zone,SanLuis220
+CONSTITUCION-EGEN,Thermal Gen S. Zone,Constitucion066
+LLANOS_DE_POTROSO_FV,Solar Farms,PAzucar110
+TAMBO_REAL_FV,Solar Farms,PAzucar110
+TRIGAL_FV,Solar Farms,Chillan154
+NUEVA_ALDEA_BL1,Thermal Gen S. Zone,SantaElvira066
+TALTAL_1_CA_GNL,Termicas Ficticias,Paposo220
+TENO_GAS_GLP,Thermal Gen S. Zone,Teno154
+MALVILLA_FV,Solar Farms,AMelipilla220
+PERALILLO_FV,Solar Farms,Teno154
+LOS_BUENOS_AIRES_EO,Wind Farms,Charrua066
+RENAICO_2_EO,Wind Farms,Mulchen220
+CMPC_SANTA_FE,Thermal Gen S. Zone,Charrua220
+ITAHUE_FV,Solar Farms,Itahue154
+LIRIO_DE_CAMPO_FV,Solar Farms,AMelipilla220
+COCHRANE_1,Thermal Gen N. Zone,Cochrane220
+CASABERMEJA_FV,Solar Farms,CNavia110
+CATAN_SOLAR_FV,Solar Farms,Itahue154
+SOL_SANTA_INES_FV,Solar Farms,Duqueco220
+TALCA_FV,Solar Farms,Itahue154
+NUEVA_RENCA-TG+TV_GNL_P,Thermal Gen S. Zone,Renca110
+QUINTERO_1B_GNL_B,Thermal Gen S. Zone,Quintero220
+SAN_ISIDRO_2-TG_GNL_C,Thermal Gen S. Zone,SanLuis220
+SANISIDRO_2_CC_DIE,Termicas Ficticias,SanLuis220
+LUMBRERAS_FV,Solar Farms,AMelipilla220
+EL_ATAJO,Hydro Gen Group C,LosNotros220
+NEHUENCO_9B_GNL_B,Thermal Gen S. Zone,SanLuis220
+PUELCHE_FV,Solar Farms,Mulchen220
+REN_FV,Solar Farms,Charrua154
+TOCOPILLA-TG2,Thermal Gen N. Zone,Tocopilla110
+CALLECALLE,Thermal Gen S. Zone,Valdivia220
+LAS_CATITAS_FV,Solar Farms,Linares154
+ATA-TG2B_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+CENIZAS,Thermal Gen N. Zone,Cardones110
+CERRO_PABELLON_U3,Thermal Gen N. Zone,Conchi220
+HUASCO-TG_U1_DIE,Thermal Gen N. Zone,Huasco110
+HUASCO-TG_U3_DIE,Thermal Gen N. Zone,Huasco110
+CITRINO_FV,Solar Farms,Chena110
+COYUNCHE_FV,Solar Farms,Charrua220
+VILLA_PRAT_FV,Solar Farms,Itahue154
+VIOLETA_FV,Solar Farms,AJahuel110
+MACHICURA_U2,Hydro Gen Group A,Colbun220
+RAPEL_U5,Hydro Gen Group A,Rapel220
+SAN_ISIDRO_2-TG_GNL_B,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO_2-TG_GNL_E,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO_2-TG+TV-FSTVU_GNL_B,Thermal Gen S. Zone,SanLuis220
+PICHON_FV,Solar Farms,Parral154
+SANISIDRO_2_CA_GNL,Termicas Ficticias,SanLuis220
+TOCOPILLA_TG3_CA_GNL,Termicas Ficticias,Tocopilla220_BP1
+PULELFU,Hydro Gen Group B,Rahue220
+ATA-TG1A+TG1B+TV1C_GNL_A,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1B_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV-FSTVD_DIE,Thermal Gen S. Zone,SanLuis220
+PILOTO_CARDONES_FV,Solar Farms,Cardones220
+ARAUCO,Thermal Gen S. Zone,Horcones066
+CMPC_PACIFICO_BL2,Thermal Gen S. Zone,Charrua220
+GRANJA_FV,Solar Farms,Lagunas220
+GUADALUPE_FV,Solar Farms,Polpaico220
+HUATACONDO_FV,Solar Farms,Lagunas220
+ATA-TG2A_GNL_INF,Thermal Gen N. Zone,Atacama220_BP1
+TALTAL_2_GNL_C,Thermal Gen N. Zone,Paposo220
+GUACOLDA_2,Thermal Gen N. Zone,Guacolda220
+KELAR-TG1_GNL_C,Thermal Gen N. Zone,Kapatur220_BP1
+CARRERA_PINTO_FV,Solar Farms,CPinto220
+CURACAVI_FV,Solar Farms,LoAguirre220
+CIPRESES_U3,Hydro Gen Group A,Cipreses154
+NUEVA_RENCA-FA_GLP,Thermal Gen S. Zone,Renca110
+BAT_SALVADOR_FV_LOAD,Hydro Ficticias,DAlmagro110
+YUNGAY_U1_DIE,Thermal Gen S. Zone,Charrua154
+CABO_LEONES_3_EO,Wind Farms,Maitencillo220
+EL_ARRAYAN_EO,Wind Farms,DonGoyo220
+MARAMBIO_FV,Solar Farms,AMelipilla220
+EL_RINCON,Hydro Gen Group C,Florida110
+LOS_MORROS,Hydro Gen Group C,AJahuel110
+LOMAS_DE_DUQUECO_EO,Wind Farms,Temuco220
+PUELCHE_SUR_EO,Wind Farms,Tineo220
+LAUTARO_2_BL2,Thermal Gen S. Zone,Lautaro066
+LOS_PINOS,Thermal Gen S. Zone,Charrua220
+LOS_VIENTOS,Thermal Gen S. Zone,LVegas110
+FARDELA_NEGRA_FV,Solar Farms,ASanta220
+MAITENCILLO,Thermal Gen N. Zone,Maitencillo220
+TARAPACA-TG_DIE,Thermal Gen N. Zone,Tarapaca220
+LEMU_FV,Solar Farms,SJavier066
+LLAY_LLAY_FV,Solar Farms,LVegas110
+LOS_MAGNOLIOS_FV,Solar Farms,ASanta220
+LOS_NOGALES_FV,Solar Farms,ElPenon110
+KELAR-TG1_GN_A,Thermal Gen N. Zone,Kapatur220_BP1
+COCINILLAS_FV,Solar Farms,ElPenon110
+DONA_CARMEN_FV,Solar Farms,DonaCarmen220
+SANTA_ROSA_FV,Solar Farms,Rapel220
+TALHUEN_FV,Solar Farms,ElPenon110
+PEUCHEN,Hydro Gen Group B,Rucue220
+SAN_ISIDRO_2-TG+TV_GNL_C,Thermal Gen S. Zone,SanLuis220
+SAN_ISIDRO_2-TG+TV-FSTVU_GNL_D,Thermal Gen S. Zone,SanLuis220
+SANTA_MARGARITA_FV,Solar Farms,Rapel220
+SANISIDRO_CA_DIE,Termicas Ficticias,SanLuis220
+ATA-TG1A+0.5TV1C_GN_A,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1A+0.5TV1C_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+ATA-TG1B_GNL_D,Thermal Gen N. Zone,Atacama220_BP1
+SAN_ISIDRO-TG+TV-FSTVD_GN_A,Thermal Gen S. Zone,SanLuis220
+YUNGAY_U3_GNL_A,Thermal Gen S. Zone,Charrua154
+OVEJERIA_FV,Solar Farms,Rancagua154
+PACHIRA_FV,Solar Farms,Linares154
+PATRICIA_VERANO_FV,Solar Farms,Paine154
+EYZAGUIRRE,Hydro Gen Group C,Florida110
+HIDRO_BONITO_MC2,Hydro Gen Group C,Rahue220
+PUANGUE_FV,Solar Farms,AMelipilla220
+RAULI_FV,Solar Farms,Itahue154
+SAN_JOSE_FV,Solar Farms,Chillan154
+LOS_VIENTOS_GNL_C,Thermal Gen S. Zone,LVegas110
+TOCOPILLA_U16-TG+TV_GNL_D,Thermal Gen N. Zone,Tocopilla220_BP1
+TOCOPILLA-TG3_GNL_A,Thermal Gen N. Zone,Tocopilla220_BP1
+TOCOPILLA-TG3_GNL_C,Thermal Gen N. Zone,Tocopilla220_BP1
+ESCORIAL_VERANO_FV,Solar Farms,LVegas110
+GUANACO_1_FV,Solar Farms,AJahuel110
+JAMA_1_FV,Solar Farms,Salar220
+KELAR-TG2_GNL_D,Thermal Gen N. Zone,Kapatur220_BP1
+LA_FORESTA_FV,Solar Farms,Itahue154
+LAS_TURCAS_FV,Solar Farms,AMelipilla220
+CERRO_DOMINADOR_CS,Thermal Gen N. Zone,Crucero220
+HORNITOS,Thermal Gen N. Zone,Chacaya220
+KELAR-TG1_GNL_E,Thermal Gen N. Zone,Kapatur220_BP1
+EL_TORO_U4,Hydro Gen Group A,Antuco220
+QUINTERO_1A_GNL_INF,Thermal Gen S. Zone,Quintero220
+SANTA_ISABEL,Hydro Gen Group C,Temuco066
+SAN_ISIDRO-TG_GNL_INF,Thermal Gen S. Zone,SanLuis220
+EL_CANELO,Hydro Gen Group C,Temuco220
+HIDRO_BONITO_MC1,Hydro Gen Group C,Rahue220
+ATACAMA_SOLAR_2_FV,Solar Farms,Lagunas220
+COLMITO_DIE,Thermal Gen S. Zone,Torquemada110
+CHAGUAL,Thermal Gen N. Zone,LVilos220
+HUASCO-TG_U2_IFO,Thermal Gen N. Zone,Huasco110
+TUCUQUERE_FV,Solar Farms,ASanta220
+PANGUE_U2,Hydro Gen Group A,Pangue220
+CARENA,Hydro Gen Group B,AJahuel220
+NUEVA_RENCA-TG+TV_GNL_D,Thermal Gen S. Zone,Renca110
+QUINTERO_1A_DIE,Thermal Gen S. Zone,Quintero220
+SANTA_LUISA_FV,Solar Farms,Chillan154
