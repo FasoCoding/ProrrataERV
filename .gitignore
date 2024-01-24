@@ -1,6 +1,7 @@
 # custom for project
 /data
-
+*.duckdb
+*.duckdb.wal
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
