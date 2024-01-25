@@ -1,5 +1,3 @@
--- Query: extrae relación entre barras y generadores asociados por collection 12 (Node_Gen)
--- Filters: class_id = 22 (Node), class_id = 2 (Generator), category_id IN (95, 96, 99, 100) (Hydro A, Hydro B, Wind, Solar)
 SELECT 
     gen_obj.name AS generator, 
     node_obj.name AS node
