@@ -1,4 +1,5 @@
-import time
+import typer
+
 from pathlib import Path
 
 from poc_prorrataerv.sql import (
@@ -20,6 +21,10 @@ from poc_prorrataerv.transform import (
     show_restuls
 )
 
+app = typer.Typer()
+
+#@app.callback()
+@app.command()
 def main():
     # Inicio de captura de datos en dataframes
     path_prg = Path(r"./data/Model PRGdia_Full_Definitivo Solution.accdb").absolute()
@@ -47,5 +52,6 @@ def main():
 
     print(show_restuls(df_ernc_processed))
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+#    main()
+#
