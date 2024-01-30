@@ -2,11 +2,7 @@ import typer
 
 from pathlib import Path
 
-from poc_prorrataerv.sql import (
-    sql_cmg,
-    sql_gen, 
-    sql_node
-)
+from poc_prorrataerv.sql import sql_cmg, sql_gen, sql_node
 
 from poc_prorrataerv.extract import (
     create_prg_engine,
@@ -15,15 +11,12 @@ from poc_prorrataerv.extract import (
     get_pmgd,
 )
 
-from poc_prorrataerv.transform import (
-    process_prorrata,
-    pivot_gen,
-    show_restuls
-)
+from poc_prorrataerv.transform import process_prorrata, pivot_gen, show_restuls
 
 app = typer.Typer()
 
-#@app.callback()
+
+# @app.callback()
 @app.command()
 def main():
     # Inicio de captura de datos en dataframes
@@ -42,16 +35,17 @@ def main():
 
     df_gen_pivot = pivot_gen(df_gen, df_banned_generators, df_pmgd)
 
-    df_ernc = (
-        df_cmg
-        .join(df_nodes, on="node", how="inner")
-        .join(df_gen_pivot, on=["generator","datetime"], how="inner")
+    df_ernc = df_cmg.join(df_nodes, on="node", how="inner").join(
+        df_gen_pivot, on=["generator", "datetime"], how="inner"
     )
 
-    df_ernc_processed = process_prorrata(df_ernc.lazy(),"Available Capacity","Capacity Curtailed")
+    df_ernc_processed = process_prorrata(
+        df_ernc.lazy(), "Available Capacity", "Capacity Curtailed"
+    )
 
     print(show_restuls(df_ernc_processed))
 
-#if __name__ == "__main__":
+
+# if __name__ == "__main__":
 #    main()
 #

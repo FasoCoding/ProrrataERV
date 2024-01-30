@@ -8,6 +8,7 @@ from sqlalchemy import (
 
 import polars as pl
 
+
 def create_prg_engine(path_prg: Path) -> engine.Engine:
     """Creates a SQLAlchemy engine for a Microsoft Access database.
 
@@ -32,11 +33,11 @@ def create_prg_engine(path_prg: Path) -> engine.Engine:
         r"ExtendedAnsiSQL=1;"
     )
     connection_url = engine.URL.create(
-        "access+pyodbc",
-        query={"odbc_connect": connection_string}
+        "access+pyodbc", query={"odbc_connect": connection_string}
     )
 
     return create_engine(connection_url)
+
 
 def get_access_data(sql_str: str, prg_engine: engine.Engine) -> pl.DataFrame:
     """Wrapper function to read data from a Microsoft Access database.
@@ -56,6 +57,7 @@ def get_access_data(sql_str: str, prg_engine: engine.Engine) -> pl.DataFrame:
     except SQLAlchemyError as e:
         raise f"Error: {e}"
 
+
 def get_pmgd() -> pl.DataFrame:
     """Extracts a list of PMGDs from an Excel file on W disc.
 
@@ -63,11 +65,14 @@ def get_pmgd() -> pl.DataFrame:
         pl.DataFrame: A polars DataFrame with the list of PMGDs.
     """
     return pl.read_excel(
-        source=Path(r"W:/41 Dpto Pronosticos/Vertimiento_ERNC/Lista_PMGDs.xlsx").absolute(),
+        source=Path(
+            r"W:/41 Dpto Pronosticos/Vertimiento_ERNC/Lista_PMGDs.xlsx"
+        ).absolute(),
         sheet_name="Hoja1",
         xlsx2csv_options={"skip_empty_lines": True},
-        read_csv_options={"new_columns": ["Nombre_CDC","Centrales"]},
+        read_csv_options={"new_columns": ["Nombre_CDC", "Centrales"]},
     )
+
 
 def get_banned_generators() -> pl.DataFrame:
     """Extracts a list of banned generators from an Excel file on R disc.
@@ -76,7 +81,9 @@ def get_banned_generators() -> pl.DataFrame:
         pl.DataFrame: A polars DataFrame with the list of banned generators.
     """
     return pl.read_excel(
-        source=Path(r"R:/Aplicaciones/Prorrateo_Vertimiento/Centrales_Vetadas.xlsx").absolute(),
+        source=Path(
+            r"R:/Aplicaciones/Prorrateo_Vertimiento/Centrales_Vetadas.xlsx"
+        ).absolute(),
         sheet_name="Hoja1",
         xlsx2csv_options={"skip_empty_lines": True},
         read_csv_options={"new_columns": ["Centrales"]},

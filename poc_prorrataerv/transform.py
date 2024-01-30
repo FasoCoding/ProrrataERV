@@ -1,6 +1,9 @@
 import polars as pl
 
-def _calc_error(df: pl.LazyFrame, error_target: str = "Prorrata", error_col_name: str = "Error") -> pl.LazyFrame:
+
+def _calc_error(
+    df: pl.LazyFrame, error_target: str = "Prorrata", error_col_name: str = "Error"
+) -> pl.LazyFrame:
     """Calculates de error column for the prorate calculation. If the prorate is negative, the error is the absolute value of the prorate.
     Aditionally, the prorate is set to 0 if it is negative.
 
@@ -12,22 +15,20 @@ def _calc_error(df: pl.LazyFrame, error_target: str = "Prorrata", error_col_name
     Returns:
         pl.LazyFrame: Data with new columns for error and prorate.
     """
-    return (
-        df
-        .with_columns(
-            pl.when(pl.col(error_target).lt(0))
-            .then(pl.col(error_target).abs())
-            .otherwise(0)
-            .alias(error_col_name),
-            pl.when(pl.col(error_target).lt(0))
-            .then(0)
-            .otherwise(pl.col(error_target))
-            .alias(error_target),
-        )
+    return df.with_columns(
+        pl.when(pl.col(error_target).lt(0))
+        .then(pl.col(error_target).abs())
+        .otherwise(0)
+        .alias(error_col_name),
+        pl.when(pl.col(error_target).lt(0))
+        .then(0)
+        .otherwise(pl.col(error_target))
+        .alias(error_target),
     )
 
+
 def _check_error(df: pl.LazyFrame, error_col: str = "Error", tol: float = 1e-3) -> bool:
-    """Calculate the total error and check if it is greater than the tolerance. 
+    """Calculate the total error and check if it is greater than the tolerance.
     This calculation is done over every hour and set to true if any of the hours has an error greater than the tolerance.
 
     Args:
@@ -39,6 +40,7 @@ def _check_error(df: pl.LazyFrame, error_col: str = "Error", tol: float = 1e-3) 
         bool: True if the error on any hour is greater than the tolerance. False otherwise.
     """
     return df.select(pl.col(error_col).ge(tol).any()).collect().item()
+
 
 def _show_total_error(df: pl.LazyFrame, error_col: str = "Error") -> float:
     """Calculate the total error as the sum of the error column.
@@ -52,7 +54,14 @@ def _show_total_error(df: pl.LazyFrame, error_col: str = "Error") -> float:
     """
     return df.select(pl.col(error_col).sum().alias("Total Error")).collect().item()
 
-def _calc_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: str = "Error", weight_col: str = "Max Capacity", over_col: str = "datetime") -> pl.LazyFrame:
+
+def _calc_prorrata(
+    df: pl.LazyFrame,
+    target_col: str = "Prorrata",
+    error_col: str = "Error",
+    weight_col: str = "Max Capacity",
+    over_col: str = "datetime",
+) -> pl.LazyFrame:
     """Redistributes the generation prorate over the hours based on the curtailment and the weight of the generator max capacity.
     This can be set for diferent columns and over different time frames.
 
@@ -66,14 +75,23 @@ def _calc_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: st
     Returns:
         pl.LazyFrame: Data with new column for prorate - should replace the "generation".
     """
-    return (
-        df
-        .with_columns(
-            (pl.col(target_col) - pl.col(error_col).sum().over(over_col) * pl.col(weight_col) / pl.col(weight_col).sum().over(over_col)).alias("Prorrata"),
-        )
+    return df.with_columns(
+        (
+            pl.col(target_col)
+            - pl.col(error_col).sum().over(over_col)
+            * pl.col(weight_col)
+            / pl.col(weight_col).sum().over(over_col)
+        ).alias("Prorrata"),
     )
 
-def process_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: str = "Error", weight_col: str = "Max Capacity", over_col: str = "datetime") -> pl.LazyFrame:
+
+def process_prorrata(
+    df: pl.LazyFrame,
+    target_col: str = "Prorrata",
+    error_col: str = "Error",
+    weight_col: str = "Max Capacity",
+    over_col: str = "datetime",
+) -> pl.LazyFrame:
     """Aglomerate the prorate calculation and error checking in a single function. The process is repeated until the error is less than the tolerance.
 
     Args:
@@ -86,7 +104,7 @@ def process_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: 
     Returns:
         pl.LazyFrame: Data with new column for prorate - should replace the "generation".
     """
-    df_processed = _calc_prorrata(df,target_col,error_col)
+    df_processed = _calc_prorrata(df, target_col, error_col)
     df_processed = _calc_error(df_processed)
 
     # TODO: Add logging
@@ -94,10 +112,13 @@ def process_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: 
 
     if _check_error(df_processed):
         return process_prorrata(df_processed)
-    
+
     return df_processed
 
-def pivot_gen(df: pl.DataFrame, banned: pl.DataFrame, pmgd: pl.DataFrame) -> pl.LazyFrame:
+
+def pivot_gen(
+    df: pl.DataFrame, banned: pl.DataFrame, pmgd: pl.DataFrame
+) -> pl.LazyFrame:
     """Pivot the generation data to a wide format and filter out the banned generators and the PMGDs.
 
     Args:
@@ -109,23 +130,17 @@ def pivot_gen(df: pl.DataFrame, banned: pl.DataFrame, pmgd: pl.DataFrame) -> pl.
         pl.LazyFrame: Data in wide format with the banned generators and PMGDs filtered out.
     """
     return (
-        df
-        .filter(
+        df.filter(
             ~pl.col("generator").is_in(banned["Centrales"].unique()),
             ~pl.col("generator").is_in(pmgd["Centrales"].unique()),
         )
-        .pivot(
-            values="value",
-            columns="property",
-            index=["generator", "datetime"]
-        )
+        .pivot(values="value", columns="property", index=["generator", "datetime"])
         .filter(
             pl.col("Units Generating") == 1,
         )
-        .select(
-            pl.exclude("Units Generating")
-        )
+        .select(pl.exclude("Units Generating"))
     )
+
 
 def show_restuls(df: pl.LazyFrame) -> pl.DataFrame:
     """Generates a summary of the results for the prorate calculation.
@@ -137,15 +152,16 @@ def show_restuls(df: pl.LazyFrame) -> pl.DataFrame:
         pl.DataFrame:  Summary of the results for the prorate calculation.
     """
     return (
-        df
-        .sort(by="datetime")
+        df.sort(by="datetime")
         .group_by("datetime")
         .agg(
             pl.col("Generation").sum().alias("Total_Gen"),
             pl.col("Prorrata").sum().alias("Total_Gen_Prorrata"),
             pl.col("Error").sum().alias("Total_Error"),
             (pl.col("Prorrata") - pl.col("Error")).sum().alias("Sum_Prorrata_error"),
-            (pl.col("Generation") - (pl.col("Prorrata") - pl.col("Error"))).sum().alias("Test_total"),
+            (pl.col("Generation") - (pl.col("Prorrata") - pl.col("Error")))
+            .sum()
+            .alias("Test_total"),
         )
         .collect()
     )
