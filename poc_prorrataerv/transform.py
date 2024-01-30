@@ -1,27 +1,71 @@
 import polars as pl
 
-def _calc_error(df: pl.LazyFrame, original_col: str = "Generation", prorrata_col: str = "Prorrata", over_col: str = "datetime") -> pl.LazyFrame:
+def _calc_error(df: pl.LazyFrame, error_target: str = "Prorrata", error_col_name: str = "Error") -> pl.LazyFrame:
+    """Calculates de error column for the prorate calculation. If the prorate is negative, the error is the absolute value of the prorate.
+    Aditionally, the prorate is set to 0 if it is negative.
+
+    Args:
+        df (pl.LazyFrame): original data for prorate calculation.
+        error_target (str, optional): Target column to calculate the error. Defaults to "Prorrata".
+        error_col_name (str, optional): Name for Error column. Defaults to "Error".
+
+    Returns:
+        pl.LazyFrame: Data with new columns for error and prorate.
+    """
     return (
         df
         .with_columns(
-            pl.when(pl.col("Prorrata").lt(0))
-            .then(pl.col("Prorrata").abs())
+            pl.when(pl.col(error_target).lt(0))
+            .then(pl.col(error_target).abs())
             .otherwise(0)
-            .alias("Error"),
-            pl.when(pl.col("Prorrata").lt(0))
+            .alias(error_col_name),
+            pl.when(pl.col(error_target).lt(0))
             .then(0)
-            .otherwise(pl.col("Prorrata"))
-            .alias("Prorrata"),
+            .otherwise(pl.col(error_target))
+            .alias(error_target),
         )
     )
 
 def _check_error(df: pl.LazyFrame, error_col: str = "Error", tol: float = 1e-3) -> bool:
+    """Calculate the total error and check if it is greater than the tolerance. 
+    This calculation is done over every hour and set to true if any of the hours has an error greater than the tolerance.
+
+    Args:
+        df (pl.LazyFrame): Original data for prorate calculation.
+        error_col (str, optional): Column to calculate error for. Defaults to "Error".
+        tol (float, optional): Set tolerance for error. Defaults to 1e-3.
+
+    Returns:
+        bool: True if the error on any hour is greater than the tolerance. False otherwise.
+    """
     return df.select(pl.col(error_col).ge(tol).any()).collect().item()
 
 def _show_total_error(df: pl.LazyFrame, error_col: str = "Error") -> float:
+    """Calculate the total error as the sum of the error column.
+
+    Args:
+        df (pl.LazyFrame): Original data for prorate calculation.
+        error_col (str, optional): Column to calculate total error. Defaults to "Error".
+
+    Returns:
+        float: Total error for the data.
+    """
     return df.select(pl.col(error_col).sum().alias("Total Error")).collect().item()
 
 def _calc_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: str = "Error", weight_col: str = "Max Capacity", over_col: str = "datetime") -> pl.LazyFrame:
+    """Redistributes the generation prorate over the hours based on the curtailment and the weight of the generator max capacity.
+    This can be set for diferent columns and over different time frames.
+
+    Args:
+        df (pl.LazyFrame): Original data for prorate calculation.
+        target_col (str, optional): Target column to use for prorate. Defaults to "Prorrata".
+        error_col (str, optional): Total energy to use to prorate. Defaults to "Error".
+        weight_col (str, optional): Max capacity of the generator. Defaults to "Max Capacity".
+        over_col (str, optional): Column for windows function. Defaults to "datetime".
+
+    Returns:
+        pl.LazyFrame: Data with new column for prorate - should replace the "generation".
+    """
     return (
         df
         .with_columns(
@@ -30,10 +74,22 @@ def _calc_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: st
     )
 
 def process_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: str = "Error", weight_col: str = "Max Capacity", over_col: str = "datetime") -> pl.LazyFrame:
+    """Aglomerate the prorate calculation and error checking in a single function. The process is repeated until the error is less than the tolerance.
+
+    Args:
+        df (pl.LazyFrame): Orginal data for prorate calculation.
+        target_col (str, optional): Target column to use for prorate. Defaults to "Prorrata".
+        error_col (str, optional): Total energy to use to prorate. Defaults to "Error".
+        weight_col (str, optional): Max capacity of the generator. Defaults to "Max Capacity".
+        over_col (str, optional): Column for windows function. Defaults to "datetime".
+
+    Returns:
+        pl.LazyFrame: Data with new column for prorate - should replace the "generation".
+    """
     df_processed = _calc_prorrata(df,target_col,error_col)
     df_processed = _calc_error(df_processed)
 
-    #print(_check_error(df_processed))
+    # TODO: Add logging
     print(f"error actual: {_show_total_error(df_processed)}")
 
     if _check_error(df_processed):
@@ -42,6 +98,16 @@ def process_prorrata(df: pl.LazyFrame, target_col: str = "Prorrata", error_col: 
     return df_processed
 
 def pivot_gen(df: pl.DataFrame, banned: pl.DataFrame, pmgd: pl.DataFrame) -> pl.LazyFrame:
+    """Pivot the generation data to a wide format and filter out the banned generators and the PMGDs.
+
+    Args:
+        df (pl.DataFrame): Generation data.
+        banned (pl.DataFrame): Banned generators.
+        pmgd (pl.DataFrame): PMGDs.
+
+    Returns:
+        pl.LazyFrame: Data in wide format with the banned generators and PMGDs filtered out.
+    """
     return (
         df
         .filter(
@@ -62,6 +128,14 @@ def pivot_gen(df: pl.DataFrame, banned: pl.DataFrame, pmgd: pl.DataFrame) -> pl.
     )
 
 def show_restuls(df: pl.LazyFrame) -> pl.DataFrame:
+    """Generates a summary of the results for the prorate calculation.
+
+    Args:
+        df (pl.LazyFrame): Complete dataset with the prorate calculation.
+
+    Returns:
+        pl.DataFrame:  Summary of the results for the prorate calculation.
+    """
     return (
         df
         .sort(by="datetime")
