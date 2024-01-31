@@ -1,5 +1,84 @@
 import polars as pl
 
+from typing import Protocol
+
+class DataExtractor(Protocol):
+    nodes: pl.DataFrame
+    gen: pl.DataFrame
+    cmg: pl.DataFrame
+    pmgd: pl.DataFrame
+    banned: pl.DataFrame
+
+class DataProcessor:
+    data: pl.LazyFrame
+    t_data_0: pl.LazyFrame
+
+    def __init__(self, data_extractor: DataExtractor):
+        self.data = _join_data(data_extractor)
+    
+    def process_prorrata(self):
+        self.data = _process_prorrata(self.data, "Available Capacity", "Capacity Curtailed")
+    
+    def show_restuls(self) -> pl.DataFrame:
+        """Generates a summary of the results for the prorate calculation.
+
+        Args:
+            df (pl.LazyFrame): Complete dataset with the prorate calculation.
+
+        Returns:
+            pl.DataFrame:  Summary of the results for the prorate calculation.
+        """
+        return (
+            self.data
+            .sort(by="datetime")
+            .group_by("datetime")
+            .agg(
+                pl.col("Generation").sum().alias("Total_Gen"),
+                pl.col("Prorrata").sum().alias("Total_Gen_Prorrata"),
+                pl.col("Capacity Curtailed").sum().alias("Total_Error"),
+                #(pl.col("Prorrata") - pl.col("Error")).sum().alias("Sum_Prorrata_error"),
+                #(pl.col("Generation") - (pl.col("Prorrata") - pl.col("Error")))
+                #.sum()
+                #.alias("Test_total"),
+            )
+            .collect()
+        )
+    
+    def get_t_data(self, data_extractor: DataExtractor) -> None:
+        self.t_data_0 = _t_data_update(self.data, data_extractor)
+    
+def _t_data_update(df: pl.LazyFrame, data_extractor: DataExtractor) -> pl.LazyFrame:
+    return (
+        df
+        .join(
+            data_extractor.gen.filter(pl.col("property") == "Generation").lazy(),
+            on=["generator","datetime"],
+            how="inner"
+        )
+        .select(
+            pl.col("data_key"),
+            pl.col("data_period"),
+            pl.col("Prorrata"),
+        )
+        .sort(by=["data_key","data_period"])
+    )
+
+
+def _join_data(data_extractor: DataExtractor) -> pl.LazyFrame:
+    gen_pivot = _pivot_gen(data_extractor.gen, data_extractor.banned, data_extractor.pmgd)
+    return (
+        data_extractor.cmg
+        .join(
+            data_extractor.nodes,
+            on="node",
+            how="inner")
+        .join(
+            gen_pivot,
+            on=["generator", "datetime"],
+            how="inner"
+        )
+        .lazy()
+    )
 
 def _calc_error(
     df: pl.LazyFrame, error_target: str = "Prorrata", error_col_name: str = "Error"
@@ -85,7 +164,7 @@ def _calc_prorrata(
     )
 
 
-def process_prorrata(
+def _process_prorrata(
     df: pl.LazyFrame,
     target_col: str = "Prorrata",
     error_col: str = "Error",
@@ -108,17 +187,17 @@ def process_prorrata(
     df_processed = _calc_error(df_processed)
 
     # TODO: Add logging
-    print(f"error actual: {_show_total_error(df_processed)}")
+    #print(f"error en iteración: {_show_total_error(df_processed)}")
 
     if _check_error(df_processed):
-        return process_prorrata(df_processed)
+        return _process_prorrata(df_processed)
 
     return df_processed
 
 
-def pivot_gen(
+def _pivot_gen(
     df: pl.DataFrame, banned: pl.DataFrame, pmgd: pl.DataFrame
-) -> pl.LazyFrame:
+) -> pl.DataFrame:
     """Pivot the generation data to a wide format and filter out the banned generators and the PMGDs.
 
     Args:
@@ -141,27 +220,3 @@ def pivot_gen(
         .select(pl.exclude("Units Generating"))
     )
 
-
-def show_restuls(df: pl.LazyFrame) -> pl.DataFrame:
-    """Generates a summary of the results for the prorate calculation.
-
-    Args:
-        df (pl.LazyFrame): Complete dataset with the prorate calculation.
-
-    Returns:
-        pl.DataFrame:  Summary of the results for the prorate calculation.
-    """
-    return (
-        df.sort(by="datetime")
-        .group_by("datetime")
-        .agg(
-            pl.col("Generation").sum().alias("Total_Gen"),
-            pl.col("Prorrata").sum().alias("Total_Gen_Prorrata"),
-            pl.col("Error").sum().alias("Total_Error"),
-            (pl.col("Prorrata") - pl.col("Error")).sum().alias("Sum_Prorrata_error"),
-            (pl.col("Generation") - (pl.col("Prorrata") - pl.col("Error")))
-            .sum()
-            .alias("Test_total"),
-        )
-        .collect()
-    )

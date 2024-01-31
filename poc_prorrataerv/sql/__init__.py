@@ -5,16 +5,25 @@ Lectura de archivos SQL y creacion de variables para su uso en el proyecto.
 from pathlib import Path
 
 # Lectura de SQL Barra-Generador
-path_sql_node = Path(r"poc_prorrataerv/sql/gen_node.sql").absolute()
-with open(path_sql_node, "r") as file:
-    sql_node = file.read()
+PATH_SQL_NODE = Path(r"poc_prorrataerv/sql/gen_node.sql").absolute()
+PATH_SQL_GEN = Path(r"poc_prorrataerv/sql/gen_data.sql").absolute()
+PATH_SQL_CMG = Path(r"poc_prorrataerv/sql/cmg_data.sql").absolute()
 
-# Lectura de SQL con data de generacion
-path_sql_gen = Path(r"poc_prorrataerv/sql/gen_data.sql").absolute()
-with open(path_sql_gen, "r") as file:
-    sql_gen = file.read()
+def read_sql(path: str) -> str:
+    """Lee un archivo SQL y retorna el contenido como un string.
 
-# lectura de SQL con data de barras con costos marginales menor a 0
-path_sql_cmg = Path(r"poc_prorrataerv/sql/cmg_data.sql").absolute()
-with open(path_sql_cmg, "r") as file:
-    sql_cmg = file.read()
+    Args:
+        path (str): Ruta al archivo SQL.
+
+    Returns:
+        str: Contenido del archivo SQL.
+    """
+    with open(path, "r") as file:
+        return file.read()
+    
+class SQL:
+    """Clase para leer archivos SQL y crear variables para su uso en el proyecto."""
+    def __init__(self):
+        self.sql_node = read_sql(PATH_SQL_NODE)
+        self.sql_gen = read_sql(PATH_SQL_GEN)
+        self.sql_cmg = read_sql(PATH_SQL_CMG)

@@ -1,51 +1,31 @@
 import typer
+import io
 
-from pathlib import Path
+from typing_extensions import Annotated
 
-from poc_prorrataerv.sql import sql_cmg, sql_gen, sql_node
-
-from poc_prorrataerv.extract import (
-    create_prg_engine,
-    get_access_data,
-    get_banned_generators,
-    get_pmgd,
-)
-
-from poc_prorrataerv.transform import process_prorrata, pivot_gen, show_restuls
+from poc_prorrataerv.extract import DataExtractor
+from poc_prorrataerv.transform import DataProcessor
+from poc_prorrataerv.load import DataLoader
 
 app = typer.Typer()
 
 
-# @app.callback()
 @app.command()
-def main():
-    # Inicio de captura de datos en dataframes
-    path_prg = Path(r"./data/Model PRGdia_Full_Definitivo Solution.accdb").absolute()
+def main(path_prg: Annotated[str, typer.Argument(help="Path to the PRG folder")]):
 
-    prg_engine = create_prg_engine(path_prg)
+    data_extractor = DataExtractor(path_prg)
+    data_extractor.extract_data()
 
-    df_nodes = get_access_data(sql_node, prg_engine)
-    df_gen = get_access_data(sql_gen, prg_engine)
-    df_cmg = get_access_data(sql_cmg, prg_engine)
+    data_processor = DataProcessor(data_extractor)
+    data_processor.process_prorrata()
+    data_processor.get_t_data(data_extractor)
 
-    prg_engine.dispose()
+    # TODO write to csv to pipe on thermngraph or use in here.
+    # se puede agregar esto al final: .write_csv(include_header=False))
+    print(data_processor.show_restuls())
+    data_processor.t_data_0.collect().write_csv("t_data_0.csv")
 
-    df_pmgd = get_pmgd()
-    df_banned_generators = get_banned_generators()
+    data_loader = DataLoader(path_prg)
+    data_loader.load_data(data_processor)
 
-    df_gen_pivot = pivot_gen(df_gen, df_banned_generators, df_pmgd)
-
-    df_ernc = df_cmg.join(df_nodes, on="node", how="inner").join(
-        df_gen_pivot, on=["generator", "datetime"], how="inner"
-    )
-
-    df_ernc_processed = process_prorrata(
-        df_ernc.lazy(), "Available Capacity", "Capacity Curtailed"
-    )
-
-    print(show_restuls(df_ernc_processed))
-
-
-# if __name__ == "__main__":
-#    main()
-#
+    print("Done!")

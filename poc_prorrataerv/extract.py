@@ -6,8 +6,39 @@ from sqlalchemy import (
     create_engine,
 )
 
+from poc_prorrataerv.sql import SQL
+
 import polars as pl
 
+PATH_ACCDB_INPUT = r"Datos/Model PRGdia_Full_Definitivo Solution/Model PRGdia_Full_Definitivo Solution.accdb"
+
+class  DataExtractor:
+    nodes: pl.DataFrame
+    gen: pl.DataFrame
+    cmg: pl.DataFrame
+    pmgd: pl.DataFrame
+    banned: pl.DataFrame
+    path_prg: Path
+
+    def __init__(self, path_prg: str):
+        temp_path = Path(path_prg)
+        temp_path = temp_path.joinpath(PATH_ACCDB_INPUT)
+        if Path(path_prg).exists() and temp_path.exists():
+            self.path_prg = temp_path
+        else:
+            raise ValueError(f"Path: {path_prg} does not exists.")
+        
+    def extract_data(self) -> None:
+        """Inicia proceso de extracción de datos.
+        """
+        with create_prg_engine(self.path_prg).connect() as conn:
+            sql = SQL()
+            self.nodes = get_access_data(sql.sql_node, conn)
+            self.gen = get_access_data(sql.sql_gen, conn)
+            self.cmg = get_access_data(sql.sql_cmg, conn)
+
+        self.pmgd = get_pmgd()
+        self.banned = get_banned_generators()
 
 def create_prg_engine(path_prg: Path) -> engine.Engine:
     """Creates a SQLAlchemy engine for a Microsoft Access database.
