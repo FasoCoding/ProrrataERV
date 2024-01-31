@@ -30,17 +30,13 @@ class DataProcessor:
         """
         return (
             self.data
-            .sort(by="datetime")
             .group_by("datetime")
             .agg(
                 pl.col("Generation").sum().alias("Total_Gen"),
                 pl.col("Prorrata").sum().alias("Total_Gen_Prorrata"),
-                pl.col("Capacity Curtailed").sum().alias("Total_Error"),
-                #(pl.col("Prorrata") - pl.col("Error")).sum().alias("Sum_Prorrata_error"),
-                #(pl.col("Generation") - (pl.col("Prorrata") - pl.col("Error")))
-                #.sum()
-                #.alias("Test_total"),
+                pl.col("Capacity Curtailed").sum().alias("Total_Curtailed"),
             )
+            .sort(by="datetime")
             .collect()
         )
     
@@ -56,11 +52,11 @@ def _t_data_update(df: pl.LazyFrame, data_extractor: DataExtractor) -> pl.LazyFr
             how="inner"
         )
         .select(
-            pl.col("data_key"),
-            pl.col("data_period"),
-            pl.col("Prorrata"),
+            pl.col("data_key").alias("key_id"),
+            pl.col("data_period").alias("period_id"),
+            pl.col("Prorrata").alias("value"),
         )
-        .sort(by=["data_key","data_period"])
+        .sort(by=["key_id","period_id"])
     )
 
 
