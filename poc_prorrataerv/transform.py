@@ -19,7 +19,7 @@ class DataProcessor:
     def process_prorrata(self):
         self.data = _process_prorrata(self.data, "Available Capacity", "Capacity Curtailed")
     
-    def show_restuls(self) -> pl.DataFrame:
+    def show_results(self) -> pl.DataFrame:
         """Generates a summary of the results for the prorate calculation.
 
         Args:
@@ -34,7 +34,7 @@ class DataProcessor:
             .agg(
                 pl.col("Generation").sum().alias("Total_Gen"),
                 pl.col("Prorrata").sum().alias("Total_Gen_Prorrata"),
-                pl.col("Capacity Curtailed").sum().alias("Total_Curtailed"),
+                #pl.col("Capacity Curtailed").sum().alias("Total_Curtailed"),
             )
             .sort(by="datetime")
             .collect()

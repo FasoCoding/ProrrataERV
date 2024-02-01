@@ -2564,6 +2564,20 @@ pure-eval = "*"
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
 
 [[package]]
+name = "termgraph"
+version = "0.5.3"
+description = "A command-line tool that draws basic graphs in the terminal."
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "termgraph-0.5.3-py3-none-any.whl", hash = "sha256:c181c168c2278a7f7161de05b1033396a2f6b06ab260ddf987b0320fae93ff8e"},
+    {file = "termgraph-0.5.3.tar.gz", hash = "sha256:36ff2098e41eeab1e7cdda7366dc3e5b514ea799fa3e77537564492a7edefdd5"},
+]
+
+[package.dependencies]
+colorama = "*"
+
+[[package]]
 name = "terminado"
 version = "0.18.0"
 description = "Tornado websocket backend for the Xterm.js Javascript terminal emulator library."
@@ -2801,4 +2815,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e7ad71804f65c4b19cd8d946b5d9115787ae30f665d326408f3ddc34dcb2c8eb"
+content-hash = "6d94d1046990ce7fad19970f41bdd653d0730d3bb524a889eac6d859210f4d84"
