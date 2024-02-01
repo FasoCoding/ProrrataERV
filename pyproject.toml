@@ -6,7 +6,7 @@ authors = ["Faso <felipe.bastidas@coordinador.cl>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-poc-prorrataerv = "poc_prorrataerv.main:app"
+poc-prorrataerv = "prorrata.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -22,8 +22,6 @@ ruff = "^0.1.11"
 jupyter = "^1.0.0"
 jupysql = "^0.10.7"
 duckdb = "^0.9.2"
-
-#include = ["*.sql"]
 
 [build-system]
 requires = ["poetry-core"]

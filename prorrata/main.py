@@ -1,5 +1,4 @@
 import typer
-from datetime import datetime
 
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.console import Console
