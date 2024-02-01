@@ -6,7 +6,7 @@ authors = ["Faso <felipe.bastidas@coordinador.cl>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-poc-prorrataerv = "prorrata.main:app"
+prorrata = "prorrata.main:app"
 
 [tool.poetry.dependencies]
 python = "^3.10"
