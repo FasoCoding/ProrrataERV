@@ -6,9 +6,9 @@ from rich.console import Console
 from rich.table import Table
 from typing_extensions import Annotated
 
-from poc_prorrataerv.extract import DataExtractor
-from poc_prorrataerv.transform import DataProcessor
-from poc_prorrataerv.load import DataLoader
+from prorrata.extract import DataExtractor
+from prorrata.transform import DataProcessor
+from prorrata.load import DataLoader
 #from poc_prorrataerv.graph import graph_results
 
 app = typer.Typer()

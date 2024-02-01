@@ -1,4 +1,4 @@
-from poc_prorrataerv.main import main
+from prorrata.main import main
 
 if __name__ == "__main__":
     main()

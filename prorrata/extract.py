@@ -6,7 +6,7 @@ from sqlalchemy import (
     create_engine,
 )
 
-from poc_prorrataerv.sql import SQL
+from prorrata.sql import SQL
 
 import polars as pl
 
