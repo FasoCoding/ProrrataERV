@@ -22,7 +22,7 @@ def main(path_prg: Annotated[str, typer.Argument(help="Path to the PRG folder")]
     """
 
     if path_prg.endswith(".zip"):
-        temp_path = Path(path_prg).parent.parent.parent
+        temp_path = Path(path_prg).parent.parent
         path_prg = temp_path.as_posix()
 
     with Progress(
