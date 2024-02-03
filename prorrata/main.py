@@ -1,5 +1,7 @@
 import typer
 
+from pathlib import Path
+
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.console import Console
 from rich.table import Table
@@ -18,6 +20,10 @@ console = Console()
 def main(path_prg: Annotated[str, typer.Argument(help="Path to the PRG folder")]):
     """Prorate ERV calculation for the PRG model.
     """
+
+    if path_prg.endswith(".zip"):
+        temp_path = Path(path_prg).parent.parent
+        path_prg = temp_path.as_posix()
 
     with Progress(
         SpinnerColumn(),
