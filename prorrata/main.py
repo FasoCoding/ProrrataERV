@@ -5,6 +5,7 @@ from pathlib import Path
 from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.console import Console
 from rich.table import Table
+from rich import print
 from typing_extensions import Annotated
 
 from prorrata.extract import DataExtractor
@@ -23,6 +24,7 @@ def main(path_prg: Annotated[str, typer.Argument(help="Path to the PRG folder")]
     if Path(path_prg).exists():
         temp_path = Path(path_prg).parent.parent
         path_prg = temp_path.as_posix()
+        print(f"[bold green]Path to PRG folder[/bold green]: :boom: {path_prg}")
 
     with Progress(
         SpinnerColumn(),
