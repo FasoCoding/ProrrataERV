@@ -1,3 +1,5 @@
+import importlib.resources as sql_resources
+
 from pathlib import Path
 
 from sqlalchemy.exc import SQLAlchemyError
@@ -5,8 +7,6 @@ from sqlalchemy import (
     engine,
     create_engine,
 )
-
-from prorrata.sql import SQL
 
 import polars as pl
 
@@ -32,10 +32,10 @@ class  DataExtractor:
         """Inicia proceso de extracción de datos.
         """
         with create_prg_engine(self.path_prg).connect() as conn:
-            sql = SQL()
-            self.nodes = get_access_data(sql.sql_node, conn)
-            self.gen = get_access_data(sql.sql_gen, conn)
-            self.cmg = get_access_data(sql.sql_cmg, conn)
+            sql = sql_resources.files("prorrata.sql")
+            self.nodes = get_access_data((sql / "gen_node.sql").read_text(), conn)
+            self.gen = get_access_data((sql / "gen_data.sql").read_text(), conn)
+            self.cmg = get_access_data((sql / "cmg_data.sql").read_text(), conn)
 
         self.pmgd = get_pmgd()
         self.banned = get_banned_generators()
