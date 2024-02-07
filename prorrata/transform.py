@@ -32,9 +32,10 @@ class DataProcessor:
             self.data
             .group_by("datetime")
             .agg(
-                pl.col("Generation").sum().alias("Total_Gen"),
-                pl.col("Prorrata").sum().alias("Total_Gen_Prorrata"),
-                #pl.col("Capacity Curtailed").sum().alias("Total_Curtailed"),
+                #pl.col("Generation").sum().alias("Total_Gen"),
+                #pl.col("Prorrata").sum().alias("Total_Gen_Prorrata"),
+                (pl.col("Prorrata").sum() - pl.col("Generation").sum()).alias("Error_Prorrata"),
+                pl.col("Capacity Curtailed").sum().alias("Total_Curtailed"),
             )
             .sort(by="datetime")
             .collect()

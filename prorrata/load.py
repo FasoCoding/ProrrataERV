@@ -4,7 +4,6 @@ from typing import Protocol
 import pyodbc
 import polars as pl
 
-PATH_ACCDB_OUTPUT = r"Antecedentes/Model PRGdia_Full_Definitivo Solution.accdb"
 
 class DataProcessor(Protocol):
     t_data_0: pl.LazyFrame
@@ -12,12 +11,8 @@ class DataProcessor(Protocol):
 class DataLoader:
     path_prg: Path
 
-    def __init__(self, path_prg: str):
-        temp_path = Path(path_prg)
-        if temp_path.exists() and temp_path.joinpath(PATH_ACCDB_OUTPUT).exists():
-            self.path_prg = temp_path.joinpath(PATH_ACCDB_OUTPUT)
-        else:
-            raise ValueError(f"Path: {path_prg} does not exists.")
+    def __init__(self, path_prg: Path):
+        self.path_prg = path_prg
     
     def load_data(self, data_processor: DataProcessor) -> None:
         """Inicia proceso de carga de datos.

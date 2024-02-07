@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "prorrata"
-version = "1.0.2"
+version = "1.0.3"
 description = "Aplicación para la prorrata de centrales de costo variable 0 en el sistema eléctrico chileno (SEN)."
 authors = ["Faso <felipe.bastidas@coordinador.cl>"]
 readme = "README.md"
@@ -19,8 +19,6 @@ termgraph = "^0.5.3"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.11"
-jupyter = "^1.0.0"
-jupysql = "^0.10.7"
 duckdb = "^0.9.2"
 
 [build-system]
