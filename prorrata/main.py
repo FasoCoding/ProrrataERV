@@ -77,9 +77,10 @@ def main(path_prg: Annotated[str, typer.Argument(help="Path to the PRG folder")]
         data_loader = DataLoader(path_prg.joinpath(PATH_ACCDB_OUTPUT))
         data_loader.load_data(data_processor)
 
-    table = Table("fecha-hora", "Generación", "Prorrata",title="Resultados prorrata ERV")
+    print("\n") #saltar una linea para que se vea mejor la salida.
+    table = Table("fecha-hora", "Error_total", "Total curtailment",title="Resultados prorrata ERV")
     for row in data_processor.show_results().iter_rows():
-        table.add_row(row[0].strftime('%Y-%m-%d %H:%M'),format(row[1],".2f"),format(row[2],".2f"))
+        table.add_row(row[0].strftime('%Y-%m-%d %H:%M'),format(row[1],".1f"),format(row[2],".1f"))
     console.print(table)
 
     # TODO: add results with graphs
