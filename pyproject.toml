@@ -19,8 +19,6 @@ termgraph = "^0.5.3"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.1.11"
-jupyter = "^1.0.0"
-jupysql = "^0.10.7"
 duckdb = "^0.9.2"
 
 [build-system]

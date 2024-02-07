@@ -10,8 +10,6 @@ from sqlalchemy import (
 
 import polars as pl
 
-PATH_ACCDB_INPUT = r"Datos/Model PRGdia_Full_Definitivo Solution/Model PRGdia_Full_Definitivo Solution.accdb"
-
 class  DataExtractor:
     nodes: pl.DataFrame
     gen: pl.DataFrame
@@ -20,13 +18,8 @@ class  DataExtractor:
     banned: pl.DataFrame
     path_prg: Path
 
-    def __init__(self, path_prg: str):
-        temp_path = Path(path_prg)
-        temp_path = temp_path.joinpath(PATH_ACCDB_INPUT)
-        if Path(path_prg).exists() and temp_path.exists():
-            self.path_prg = temp_path
-        else:
-            raise ValueError(f"Path: {path_prg} does not exists.")
+    def __init__(self, path_prg: Path):
+        self.path_prg = path_prg
         
     def extract_data(self) -> None:
         """Inicia proceso de extracción de datos.
@@ -55,9 +48,6 @@ def create_prg_engine(path_prg: Path) -> engine.Engine:
     Returns:
         engine.Engine: A SQLAlchemy engine object.
     """
-    if not path_prg.exists():
-        raise ValueError(f"Path: {path_prg} does not exists.")
-
     connection_string = (
         r"DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};"
         rf"DBQ={path_prg.as_posix()};"
