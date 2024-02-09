@@ -17,9 +17,13 @@ class  DataExtractor:
     pmgd: pl.DataFrame
     banned: pl.DataFrame
     path_prg: Path
+    path_pmgd: Path
+    path_banned: Path
 
-    def __init__(self, path_prg: Path):
+    def __init__(self, path_prg: Path, path_pmgd: Path, path_banned: Path):
         self.path_prg = path_prg
+        self.path_pmgd = path_pmgd
+        self.path_banned = path_banned
         
     def extract_data(self) -> None:
         """Inicia proceso de extracción de datos.
@@ -30,8 +34,8 @@ class  DataExtractor:
             self.gen = get_access_data((sql / "gen_data.sql").read_text(), conn)
             self.cmg = get_access_data((sql / "cmg_data.sql").read_text(), conn)
 
-        self.pmgd = get_pmgd()
-        self.banned = get_banned_generators()
+        self.pmgd = get_pmgd(self.path_pmgd)
+        self.banned = get_banned_generators(self.path_banned)
 
 def create_prg_engine(path_prg: Path) -> engine.Engine:
     """Creates a SQLAlchemy engine for a Microsoft Access database.
@@ -79,32 +83,28 @@ def get_access_data(sql_str: str, prg_engine: engine.Engine) -> pl.DataFrame:
         raise f"Error: {e}"
 
 
-def get_pmgd() -> pl.DataFrame:
+def get_pmgd(path_pmgd: Path) -> pl.DataFrame:
     """Extracts a list of PMGDs from an Excel file on W disc.
 
     Returns:
         pl.DataFrame: A polars DataFrame with the list of PMGDs.
     """
     return pl.read_excel(
-        source=Path(
-            r"W:/41 Dpto Pronosticos/Vertimiento_ERNC/Lista_PMGDs.xlsx"
-        ).absolute(),
+        source=path_pmgd.absolute(),
         sheet_name="Hoja1",
         xlsx2csv_options={"skip_empty_lines": True},
         read_csv_options={"new_columns": ["Nombre_CDC", "Centrales"]},
     )
 
 
-def get_banned_generators() -> pl.DataFrame:
+def get_banned_generators(path_banned: Path) -> pl.DataFrame:
     """Extracts a list of banned generators from an Excel file on R disc.
 
     Returns:
         pl.DataFrame: A polars DataFrame with the list of banned generators.
     """
     return pl.read_excel(
-        source=Path(
-            r"R:/Aplicaciones/Prorrateo_Vertimiento/Centrales_Vetadas.xlsx"
-        ).absolute(),
+        source=path_banned.absolute(),
         sheet_name="Hoja1",
         xlsx2csv_options={"skip_empty_lines": True},
         read_csv_options={"new_columns": ["Centrales"]},

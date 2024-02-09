@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "prorrata"
-version = "1.1.0"
+version = "1.2.0"
 description = "Aplicación para la prorrata de centrales de costo variable 0 en el sistema eléctrico chileno (SEN)."
 authors = ["Faso <felipe.bastidas@coordinador.cl>"]
 readme = "README.md"
