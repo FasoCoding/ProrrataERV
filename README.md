@@ -9,3 +9,7 @@ Se recomiendo instalar mediante pipx directamente con el wheel o pasando la ruta
 ## Uso.
 
 Agregar al archivo de post-proceso.bat -> prorrata %SOLUTION_0%
+
+## TODO.
+Falta agregar pruebas unitarias y mejorar documentación.
+Código probado sobre salidas reales del PRG-CEN.
