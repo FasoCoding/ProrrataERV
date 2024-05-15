@@ -10,7 +10,7 @@ from sqlalchemy import (
 
 import polars as pl
 
-class  DataExtractor:
+class DataExtractor:
     nodes: pl.DataFrame
     gen: pl.DataFrame
     cmg: pl.DataFrame
