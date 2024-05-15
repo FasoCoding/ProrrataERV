@@ -184,7 +184,9 @@ def _process_prorrata(
     df_processed = _calc_error(df_processed)
 
     # TODO: Add logging
+    #error_iteracion = _show_total_error(df_processed)
     #print(f"error en iteración: {_show_total_error(df_processed)}")
+    #df_processed.collect().write_csv(f"prorrata_error_{error_iteracion:.2f}.csv")
 
     if _check_error(df_processed):
         return _process_prorrata(df_processed)
