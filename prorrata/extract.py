@@ -107,5 +107,5 @@ def get_banned_generators(path_banned: Path) -> pl.DataFrame:
         source=path_banned.absolute(),
         sheet_name="Hoja1",
         xlsx2csv_options={"skip_empty_lines": True},
-        read_csv_options={"new_columns": ["Centrales"]},
+        read_csv_options={"new_columns": ["Centrales", "Comment"]},
     )
