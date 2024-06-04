@@ -43,6 +43,7 @@ class DataExtractor:
             self.gen
             .filter(pl.col("property").eq("Capacity Curtailed"))
             .select(pl.col("value").sum())
+            .item(0,0)
         )
         
         return total_row > 0 and total_curtailment > 0
