@@ -37,6 +37,16 @@ class DataExtractor:
         self.pmgd = get_pmgd(self.path_pmgd)
         self.banned = get_banned_generators(self.path_banned)
 
+    def check_curtailment(self) -> bool:
+        total_row, _ = self.cmg.shape
+        total_curtailment = (
+            self.gen
+            .filter(pl.col("property").eq("Capacity Curtailed"))
+            .select(pl.col("value").sum())
+        )
+        
+        return total_row > 0 and total_curtailment > 0
+
 def create_prg_engine(path_prg: Path) -> engine.Engine:
     """Creates a SQLAlchemy engine for a Microsoft Access database.
 
