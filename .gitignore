@@ -3,6 +3,7 @@
 *.duckdb
 *.duckdb.wal
 *.csv
+*.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
