@@ -86,14 +86,14 @@ def main(path_prg: Annotated[str, typer.Argument(help="Path to the PRG folder")]
 
             progress.stop()
 
+            print("\n") #saltar una linea para que se vea mejor la salida.
+            table = Table("fecha-hora", "Error_total", "Total curtailment",title="Resultados prorrata ERV")
+            for row in data_processor.show_results().iter_rows():
+                table.add_row(row[0].strftime('%Y-%m-%d %H:%M'),format(row[1],".1f"),format(row[2],".1f"))
+            if table.row_count > 0:
+                console.print(table)
+
         else:
             progress.print("No hay curtailment! no pasa nada XD... :pile_of_poo:", style="bold red")
-        
-        print("\n") #saltar una linea para que se vea mejor la salida.
-        table = Table("fecha-hora", "Error_total", "Total curtailment",title="Resultados prorrata ERV")
-        for row in data_processor.show_results().iter_rows():
-            table.add_row(row[0].strftime('%Y-%m-%d %H:%M'),format(row[1],".1f"),format(row[2],".1f"))
-        if table.row_count > 0:
-            console.print(table)
 
     # TODO: add results with graphs
