@@ -29,6 +29,38 @@ class DataProcessor:
         self.data = _create_prorrata(data= self.data)
         self.data = _calc_error(self.data)
         self.data = _process_prorrata(data= self.data)
+    
+    def get_t_data(self, data_extractor: DataExtractor) -> None:
+        self.t_data_0 = _t_data_update(self.data, data_extractor)
+    
+    def show_results(self) -> pl.DataFrame:
+        return (
+            self.data
+            .group_by("datetime")
+            .agg(
+                (pl.col("Prorrata").sum() - pl.col("Generation").sum()).alias("Error_Prorrata"),
+                pl.col("Capacity Curtailed").sum().alias("Total_Curtailed"),
+            )
+            .sort(by="datetime")
+            #.collect()
+        )
+
+def _t_data_update(df: pl.LazyFrame, data_extractor: DataExtractor) -> pl.LazyFrame:
+    return (
+        df
+        .join(
+            data_extractor.gen.filter(pl.col("property") == "Generation"),#.lazy(),
+            on=["generator","datetime"],
+            how="inner"
+        )
+        .select(
+            pl.col("data_key").alias("key_id"),
+            pl.col("data_period").alias("period_id"),
+            pl.col("Prorrata").alias("value"),
+        )
+        .sort(by=["key_id","period_id"])
+        .lazy()
+    )
 
 def _join_data(data_extractor: DataExtractor) -> pl.LazyFrame:
     """
@@ -49,7 +81,7 @@ def _join_data(data_extractor: DataExtractor) -> pl.LazyFrame:
         data_extractor.cmg
         .join(data_extractor.nodes, on="node", how="inner")
         .join(gen_data_pivot, on=["generator", "datetime"], how="inner")
-        .lazy()
+        #.lazy()
     )
 
 def _create_prorrata(data: pl.LazyFrame) -> pl.LazyFrame:
@@ -98,4 +130,8 @@ def _calc_error(df: pl.LazyFrame) -> pl.LazyFrame:
     )
 
 def _check_error(df: pl.LazyFrame, tol: float = 1e-3) -> bool:
-    return df.select(pl.col(ERROR_COL).ge(tol).any()).collect().item()
+    #print(f"error: {df.select(pl.col(ERROR_COL).sum()).item()}")
+    return df.select(pl.col(ERROR_COL).ge(tol).any()).item()
+    
+    #print(f"error: {df.select(pl.col(ERROR_COL).sum()).collect().item()}")
+    #return df.select(pl.col(ERROR_COL).ge(tol).any()).collect().item()

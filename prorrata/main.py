@@ -9,7 +9,8 @@ from rich.table import Table
 from typing_extensions import Annotated
 
 from prorrata.extract import DataExtractor
-from prorrata.transform import DataProcessor
+#from prorrata.transform import DataProcessor
+from prorrata.transform_cdc import DataProcessor
 from prorrata.load import DataLoader
 
 # TODO implementar graficos para la salida.
@@ -72,7 +73,8 @@ def main(path_prg: Annotated[str, typer.Argument(help="Path to the PRG folder")]
         
         if  data_extractor.check_curtailment():
             task_data = progress.add_task("Processing data...", total=None)
-            data_processor = DataProcessor(data_extractor)
+            #data_processor = DataProcessor(data_extractor)
+            data_processor = DataProcessor.from_extractor(data_extractor)
             data_processor.process_prorrata()
             data_processor.get_t_data(data_extractor)
             progress.print("listo! datos procesados :smiley: ...", style="bold cyan")
