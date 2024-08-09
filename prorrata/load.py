@@ -28,7 +28,7 @@ class DataLoader:
 
         try:
             cnxn.autocommit = False
-            params = [(data['value'],data['key_id'],data['period_id']) for data in data_processor.t_data_0.collect().to_dicts()]
+            params = [(data['value'],data['key_id'],data['period_id']) for data in data_processor.t_data_0.to_dicts()]
             crsr.executemany("UPDATE t_data_0 SET t_data_0.value = ? WHERE t_data_0.key_id = ? AND t_data_0.period_id = ?;", params)
         except pyodbc.DatabaseError as err:
             cnxn.rollback()

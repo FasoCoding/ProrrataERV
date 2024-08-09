@@ -15,8 +15,8 @@ ACTIVE_COL = "Active"
 
 @dataclass
 class DataProcessor:
-    data: pl.LazyFrame
-    t_data_0: Optional[pl.LazyFrame]
+    data: pl.DataFrame
+    t_data_0: Optional[pl.DataFrame]
 
     @classmethod
     def from_extractor(cls, data_extractor: DataExtractor):
@@ -45,7 +45,7 @@ class DataProcessor:
             #.collect()
         )
 
-def _t_data_update(df: pl.LazyFrame, data_extractor: DataExtractor) -> pl.LazyFrame:
+def _t_data_update(df: pl.DataFrame, data_extractor: DataExtractor) -> pl.DataFrame:
     return (
         df
         .join(
@@ -59,10 +59,10 @@ def _t_data_update(df: pl.LazyFrame, data_extractor: DataExtractor) -> pl.LazyFr
             pl.col("Prorrata").alias("value"),
         )
         .sort(by=["key_id","period_id"])
-        .lazy()
+        #.lazy()
     )
 
-def _join_data(data_extractor: DataExtractor) -> pl.LazyFrame:
+def _join_data(data_extractor: DataExtractor) -> pl.DataFrame:
     """
     Une toda la información extraida en 1 dataframe.
     """
@@ -84,7 +84,7 @@ def _join_data(data_extractor: DataExtractor) -> pl.LazyFrame:
         #.lazy()
     )
 
-def _create_prorrata(data: pl.LazyFrame) -> pl.LazyFrame:
+def _create_prorrata(data: pl.DataFrame) -> pl.DataFrame:
     return (
         data.with_columns(
             (
@@ -97,7 +97,7 @@ def _create_prorrata(data: pl.LazyFrame) -> pl.LazyFrame:
     )
 
 
-def _process_prorrata(data: pl.LazyFrame) -> pl.LazyFrame:
+def _process_prorrata(data: pl.DataFrame) -> pl.DataFrame:
     data_processed = _calc_new_prorrata(data)
     data_processed = _calc_error(data_processed)
 
@@ -106,7 +106,7 @@ def _process_prorrata(data: pl.LazyFrame) -> pl.LazyFrame:
     
     return data_processed
 
-def _calc_new_prorrata(df: pl.LazyFrame) -> pl.LazyFrame:
+def _calc_new_prorrata(df: pl.DataFrame) -> pl.DataFrame:
     return df.with_columns(
         (
             pl.col(PRORRATA_COL)
@@ -116,7 +116,7 @@ def _calc_new_prorrata(df: pl.LazyFrame) -> pl.LazyFrame:
         ).alias(PRORRATA_COL),
     )
 
-def _calc_error(df: pl.LazyFrame) -> pl.LazyFrame:
+def _calc_error(df: pl.DataFrame) -> pl.DataFrame:
     return df.with_columns(
         pl.when(pl.col(PRORRATA_COL).gt(pl.col(AVAILABLE_COL)))
         .then(pl.col(PRORRATA_COL) - pl.col(AVAILABLE_COL))
@@ -129,7 +129,7 @@ def _calc_error(df: pl.LazyFrame) -> pl.LazyFrame:
         .alias(PRORRATA_COL),
     )
 
-def _check_error(df: pl.LazyFrame, tol: float = 1e-3) -> bool:
+def _check_error(df: pl.DataFrame, tol: float = 1e-2) -> bool:
     #print(f"error: {df.select(pl.col(ERROR_COL).sum()).item()}")
     return df.select(pl.col(ERROR_COL).ge(tol).any()).item()
     
