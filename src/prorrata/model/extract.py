@@ -29,7 +29,7 @@ class DataExtractor:
         """Inicia proceso de extracción de datos.
         """
         with create_prg_engine(self.path_prg).connect() as conn:
-            sql = sql_resources.files("prorrata.sql")
+            sql = sql_resources.files("prorrata.utils")
             self.nodes = get_access_data((sql / "gen_node.sql").read_text(), conn)
             self.gen = get_access_data((sql / "gen_data.sql").read_text(), conn)
             self.cmg = get_access_data((sql / "cmg_data.sql").read_text(), conn)
@@ -103,9 +103,8 @@ def get_pmgd(path_pmgd: Path) -> pl.DataFrame:
     return pl.read_excel(
         source=path_pmgd.absolute(),
         sheet_name="Hoja1",
-        xlsx2csv_options={"skip_empty_lines": True},
-        read_csv_options={"new_columns": ["Nombre_CDC", "Centrales"]},
-    )
+        columns="B"
+    ).rename({"Nombre PMGD Plexos": "Centrales"})
 
 
 def get_banned_generators(path_banned: Path) -> pl.DataFrame:
@@ -117,6 +116,5 @@ def get_banned_generators(path_banned: Path) -> pl.DataFrame:
     return pl.read_excel(
         source=path_banned.absolute(),
         sheet_name="Hoja1",
-        xlsx2csv_options={"skip_empty_lines": True},
-        read_csv_options={"new_columns": ["Centrales", "Comment"]},
-    )
+        columns="A",
+    ).rename({"Lista de Centrales Vetadas": "Centrales"})

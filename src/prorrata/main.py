@@ -8,10 +8,10 @@ from rich.table import Table
 #from rich import print
 from typing_extensions import Annotated
 
-from prorrata.extract import DataExtractor
+from prorrata.model.extract import DataExtractor
 #from prorrata.transform import DataProcessor
-from prorrata.transform_cdc import DataProcessor
-from prorrata.load import DataLoader
+from prorrata.business.transform_cdc import DataProcessor
+from prorrata.model.load import DataLoader
 
 # TODO implementar graficos para la salida.
 #from poc_prorrataerv.graph import graph_results
