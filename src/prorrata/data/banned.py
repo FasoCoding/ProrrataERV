@@ -7,7 +7,7 @@ import polars as pl
 PATH_BANNED_GENERATORS = r"R:/Aplicaciones/Prorrateo_Vertimiento/Centrales_Vetadas.xlsx"
 
 @dataclass
-class VetadasModel:
+class BannedModel:
     path: Path
     centrales: List[str]
 
