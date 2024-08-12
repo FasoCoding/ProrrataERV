@@ -3,7 +3,7 @@ from typing import Optional
 
 import polars as pl
 
-from prorrata.model.extract import DataExtractor
+from prorrata.data.extract import DataExtractor
 
 WEIGHT_COL = "Max Capacity"
 DATETIME_COL = "datetime"
