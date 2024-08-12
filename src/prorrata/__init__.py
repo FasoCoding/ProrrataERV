@@ -1,4 +1,4 @@
-from prorrata.main import main
+from prorrata.cli import main
 
 if __name__ == "__main__":
     main()
