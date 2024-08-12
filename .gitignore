@@ -5,6 +5,7 @@
 *.csv
 *.bat
 .pdm-python
+dev/
 
 #ruff-stuff
 .ruff_cache/
