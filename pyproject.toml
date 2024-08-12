@@ -32,7 +32,7 @@ Issues = "https://github.com/FasoCoding/ProrrataERV/issues"
 Source = "https://github.com/FasoCoding/ProrrataERV"
 
 [project.scripts]
-prorrata = "prorrata.main:app"
+prorrata = "prorrata.cli:app"
 
 [tool.pdm]
 [tool.pdm.dev-dependencies]
