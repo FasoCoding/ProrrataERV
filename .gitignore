@@ -6,6 +6,7 @@
 *.bat
 .pdm-python
 dev/
+*.ipynb
 
 #ruff-stuff
 .ruff_cache/
