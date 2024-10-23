@@ -5,7 +5,7 @@
 *.csv
 *.bat
 .pdm-python
-dev/
+#dev/
 *.ipynb
 
 #ruff-stuff
