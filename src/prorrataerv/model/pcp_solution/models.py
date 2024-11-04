@@ -1,31 +1,26 @@
-from pydantic import BaseModel
 import datetime as dt
+
+from pydantic import BaseModel
+
 
 class ObjectRelationshipSchema(BaseModel):
     parent_obj: str
     child_obj: str
 
-class CollectionDataSchema(BaseModel):
+
+class ResultSchema(BaseModel):
+    collection: str
+    property: str
     name: str
-    property: str
     datetime: dt.datetime
     value: float
 
-class GeneratorsSchema(BaseModel):
-    generator: str
-    property: str
-    datetime: dt.datetime
-    data_key: int
-    data_period: int
-    value: float
 
-class DataSchema(BaseModel):
+class ResultDataSchema(BaseModel):
+    collection: str
+    property: str
+    name: str
+    datetime: dt.datetime
     key_id: int
     period_id: int
-    value: float
-
-class ReservesSchema(BaseModel):
-    generator: str
-    property: str
-    datetime: dt.datetime
     value: float
