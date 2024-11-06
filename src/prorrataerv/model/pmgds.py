@@ -1,16 +1,18 @@
-import polars as pl
+from pathlib import Path
 
+import fastexcel
 
+type pmgd_names = str
 
-def get_pmgd(path_pmgd: Path) -> pl.DataFrame:
-    """Extracts a list of PMGDs from an Excel file on W disc.
+def get_pmgd_list(path_to_pmgd: Path) -> list[pmgd_names]:
+    """recupera una lista de centrales vetadas del proceso de la prorrata.
+
+    Args:
+        path_to_banned (Path): ruta al excel con centrales pmgd.
 
     Returns:
-        pl.DataFrame: A polars DataFrame with the list of PMGDs.
+        list[str]: lista de nombres plexos
     """
-    return pl.read_excel(
-        source=path_pmgd.absolute(),
-        sheet_name="Hoja1",
-        xlsx2csv_options={"skip_empty_lines": True},
-        read_csv_options={"new_columns": ["Nombre_CDC", "Centrales"]},
-    )
+    excel_reader = fastexcel.read_excel(path_to_pmgd.absolute())
+    data_sheet = excel_reader.load_sheet_by_idx(0, use_columns="A")
+    return data_sheet.to_polars().to_series().to_list()
