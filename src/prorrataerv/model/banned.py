@@ -1,8 +1,10 @@
 from pathlib import Path
+from typing import TypeAlias
 
 import fastexcel
 
-type banned_names = str
+banned_names: TypeAlias = str
+
 
 def get_banned_list(path_to_banned: Path) -> list[banned_names]:
     """recupera una lista de centrales vetadas del proceso de la prorrata.
