@@ -1,15 +1,13 @@
 # Prorrateo ERNC
-
-Prueba de conscepto para realizar el prorrateo de las centrales ERNC a través de un código python y siendo después trasapado la data al accdb.
+Aplicación para reasignar el punto de operación para las centrales con CV=0 (se adapta hasta CV=0.1), ante situaciones de exceso de energía (curtailment).
 
 ## Instalación.
-
-Se recomiendo instalar mediante pipx directamente con el wheel o pasando la ruta de github.
+Utilizar UV para instalar la aplicación como CLI.
 
 ## Uso.
-
 Agregar al archivo de post-proceso.bat -> prorrata %SOLUTION_0%
 
 ## TODO.
-Falta agregar pruebas unitarias y mejorar documentación.
-Código probado sobre salidas reales del PRG-CEN.
+1. Agregar módulo por subzonas.
+2. Agregar módulo con calculo de mínimos técnicos.
+3. Agregar módulo para considerar centrales en horas sin SSCC.
