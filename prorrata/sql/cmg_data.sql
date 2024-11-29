@@ -11,4 +11,4 @@ INNER JOIN t_data_0 ON t_key.key_id = t_data_0.key_id)
 INNER JOIN t_phase_3 ON t_data_0.period_id = t_phase_3.period_id)
 INNER JOIN t_period_0 ON t_phase_3.interval_id = t_period_0.interval_id)
 INNER JOIN t_category ON t_child.category_id = t_category.category_id
-WHERE t_collection.collection_id = 245 AND t_property.property_id = 1233 AND t_data_0.value < 0  AND t_period_0.interval_id <= 24;
+WHERE t_collection.collection_id = 245 AND t_property.name = 'Price' AND t_data_0.value < 0  AND t_period_0.interval_id <= 24;
