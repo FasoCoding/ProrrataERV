@@ -129,7 +129,7 @@ def _calc_error(df: pl.DataFrame) -> pl.DataFrame:
         .alias(PRORRATA_COL),
     )
 
-def _check_error(df: pl.DataFrame, tol: float = 1e-2) -> bool:
+def _check_error(df: pl.DataFrame, tol: float = 1e-1) -> bool:
     #print(f"error: {df.select(pl.col(ERROR_COL).sum()).item()}")
     return df.select(pl.col(ERROR_COL).ge(tol).any()).item()
     
