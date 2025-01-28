@@ -1,7 +1,16 @@
 import typer
+from typing import Annotated
+from prorrataerv.cli import config
 
-from pcp_check.presentation.cli import bids, sscc
 
-app = typer.Typer(pretty_exceptions_show_locals=False)
-app.add_typer(bids.app, name="bids")
-app.add_typer(sscc.app, name="sscc")
+def main(path: Annotated[str, typer.Argument(help="path to file")]) -> None:
+    print(path)
+
+
+app = typer.Typer(callback=main)
+app.add_typer(config.app, name="config")
+
+
+# @app.command()
+# def main(path: Annotated[str, typer.Argument(help="path to file")]) -> None:
+#     print(path)
