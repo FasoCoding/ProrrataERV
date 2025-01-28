@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-prorrata = "prorrataerv:main"
+prorrata = "prorrataerv.cli.main:app"
 
 [build-system]
 requires = ["hatchling"]
